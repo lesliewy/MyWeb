@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <title>Leslie WY</title>
+  <!-- 顺序很重要，后面的会覆盖前面的 -->
+  <!--
+  <link rel="stylesheet" type="text/css" href="scripts/bootstrap/css/bootstrap.css">
+  -->
+  <link rel="stylesheet" type="text/css" href="scripts/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/style.css" >
+
+  <!--
+   <link rel="stylesheet" type="text/css" href="styles/animate.css" >
+  <link rel="stylesheet" type="text/css" href="styles/fancybox/jquery.fancybox.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href='http://fonts.useso.com/css?family=Raleway:200,400,800|Clicker+Script' >
+  <link rel="stylesheet" href="bower_components/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+  -->
+  <!-- 图标 -->
+  <!--
+   <link rel="stylesheet" type="text/css" href="styles/font-awesome.css" >
+  -->
+  <!--[if lt IE 9]>
+  <script src="js/respond-1.1.0.min.js"></script>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/html5element.js"></script>
+  <![endif]-->
+</head>
+
+<body ng-app="stock" ng-controller="AnalyseCtrl">
+  <div id="intros" class="demo-2">
+    <div class="content">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+        <div class="main-title">
+          <h1>
+            Leslie WY
+            <span/>
+          </h1>
+          <div class="top_left_cont zoomIn wow animated">
+            <h2>
+              <br> <strong>股票分析</strong>
+            </h2>
+            <h3>September 10th 2016, Ding Jia Zhuang, Nan Jing</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /container -->
+
+  <!--begin: Header_section-->
+  <header id="header_wrapper">
+    <div class="container">
+      <div class="header_box">
+        <div class="logo">
+          <a href="#">
+          </a>
+        </div>
+        <nav class="navbar navbar-inverse" role="navigation">
+          <div class="navbar-header">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="main-nav" class="collapse navbar-collapse navStyle">
+            <ul class="nav navbar-nav" id="mainNav">
+              <li class="active">
+                <a href="#intros" class="scroll-link">Home</a>
+              </li>
+              <li>
+                <a href="#notionHot" class="scroll-link">notionHot</a>
+              </li>
+              <li>
+                <a href="#industryHot" class="scroll-link">industryHot</a>
+              </li>
+              <li>
+                <a href="#Portfolio" class="scroll-link">Photo Gallery</a>
+              </li>
+              <li>
+                <a href="#team" class="scroll-link">Family</a>
+              </li>
+              <li>
+                <a href="#contact" class="scroll-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--end: Header_section-->
+
+<!-- begin notionHot -->
+<section id="notionHot">
+  <div id="divMain" >
+      <form name="notionHotForm" ng-submit="query('notionHot')" >
+         <div class="input-append date input-group input-daterange">
+             <input id="notionHotBegin" name="notionHotBegin" class="span3" size="16" type="text" value="2016-01-03 15:00:00" mydatepicker ng-model="conditions.notionHotBegin"/>
+             <span class="add-on"><i class="icon-calendar"></i></span>
+         </div>
+         <span class="input-group-addon">到</span>
+         <div class="input-append date input-group input-daterange" id="date">
+             
+             <input name="notionHotEnd" id="notionHotEnd" size="16" type="text" value="" mydatepicker ng-model="conditions.notionHotEnd"/>
+             <span class="add-on"><i class="icon-calendar"></i></span>
+         </div>
+
+         <input type="submit" value="查询" ng-disabled="notionHotForm.$invalid"/>
+      </form>
+
+    <table class="table table-striped table-bordered table-hover table-condensed">
+      <tr>
+        <th ng-repeat="(x,y) in notionHeadNames">{{ y }}</th>
+      </tr>
+      <tr ng-repeat="x in notionHotItems">
+        <td ng-bind="x.num"></td>
+        <td ng-bind="x.notionName"></td>
+        <td ng-bind="x.totalChange"></td>
+        <td ng-bind="x.corpsNum"></td>
+      </tr>
+    </table>
+    <nav class="pagination">
+      <ul>
+        <li>
+          <a ng-click="Previous()">
+            <span>上一页</span>
+          </a>
+        </li>
+        <li ng-repeat="notionHotPage in notionHotPageList" ng-class="{active: isActivePage(notionHotPage)}" >
+          <a ng-click="selectPage(notionHotPage)" >{{ notionHotPage }}</a>
+        </li>
+        <li>
+          <a ng-click="Next()">
+            <span>下一页</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </section>
+  <!-- end notionHot -->
+
+  <!-- begin: industryHot -->
+<section id="industryHot">
+  <div id="divMain">
+      <form name="industryHotForm" ng-submit="query('industryHot')" >
+         <div class="input-append date input-group input-daterange">
+             <input id="industryHotBegin" name="industryHotBegin" class="span3" size="16" type="text" value="2016-01-03 15:00:00" mydatepicker ng-model="conditions.industryHotBegin" />
+             <span class="add-on"><i class="icon-calendar"></i></span>
+         </div>
+         <span class="input-group-addon">到</span>
+         <div >
+             <input name="industryHotEnd" id="industryHotEnd" size="16" type="text" value="" mydatepicker ng-model="conditions.industryHotEnd" />
+             <span class="add-on"><i class="icon-calendar"></i></span>
+         </div>
+         <input type="submit" value="查询" ng-disabled="industryHotForm.$invalid"/>
+      </form>
+    <table class="table table-striped table-bordered table-hover table-condensed">
+      <tr>
+        <th ng-repeat="(x,y) in industryHeadNames">{{ y }}</th>
+      </tr>
+      <tr ng-repeat="x in industryHotItems">
+        <td ng-bind="x.num"></td>
+        <td ng-bind="x.industryName"></td>
+        <td ng-bind="x.totalChange"></td>
+        <td ng-bind="x.corpsNum"></td>
+      </tr>
+    </table>
+    <nav class="pagination">
+      <ul>
+        <li>
+          <a ng-click="Previous()">
+            <span>上一页</span>
+          </a>
+        </li>
+        <li ng-repeat="industryHotPage in industryHotPageList" ng-class="{active: isActivePage(industryHotPage)}" >
+          <a ng-click="selectPage(industryHotPage)" >{{ industryHotPage }}</a>
+        </li>
+        <li>
+          <a ng-click="Next()">
+            <span>下一页</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+<!--
+  <div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
+    <div class="container">
+      <h2>About Us</h2>
+      <h6>
+        Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum
+      </h6>
+      <div class="inner_section">
+        <div class="row">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+            <h3>Bride’s story</h3>
+            <p>
+              Lorem ipsum dolor sit amet, quo meis voluptaria, erant bonorum albucius et per, ei placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel. Te sit malorum ceteros repudiandae, ne tritani adipisci vis.
+            </p>
+            <h4>Hobbies</h4>
+            <ul class="about-us-list">
+              <li class="points">Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
+              <li class="points">
+                Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida
+              </li>
+              <li class="points">
+                Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci gravida
+              </li>
+              <li class="points">Sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
+              <li class="points">Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mrgTop30">
+
+          <div class="col-md-6">
+            <h3>Groom’s story</h3>
+            <p>
+              Lorem ipsum dolor sit amet, quo meis voluptaria, erant bonorum albucius et per, ei placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel. Te sit malorum ceteros repudiandae, ne tritani adipisci vis.
+            </p>
+            <h4>Hobbies</h4>
+            <ul class="about-us-list">
+              <li class="points">Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
+              <li class="points">
+                Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida
+              </li>
+              <li class="points">
+                Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci gravida
+              </li>
+              <li class="points">Sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
+              <li class="points">Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+</section>
+<!--end: industryHot-->
+
+
+
+   <script src="bower_components/angular/angular.js"></script>
+   <script type="text/javascript" src="bower_components/jquery/dist/jquery.js" ></script>
+   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+   <script type="text/javascript" src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js" ></script>
+   
+   <!--
+   <script src="bower_components/bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+   <script src="bower_components/json/json2.js"></script>
+   <script src="bower_components/bootstrap-datetimepicker/src/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+   -->
+   <script src="bower_components/angular-route/angular-route.min.js"></script>
+   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+   <script src="scripts/utils/demo-2.js"></script>
+   <script src="scripts/utils/component.js"></script>
+   <script src="scripts/app.js"></script>
+   <script src="scripts/controllers/myControllers.js"></script>
+   <script src="scripts/services/myServices.js"></script>
+   <script src="scripts/directives/myDirectives.js"></script>
+   <!-- myUtils.js 里面都是function，没有执行语句, 顺序没什么关系 -->
+   <script src="scripts/utils/myUtils.js"></script>
+</body>
+</html>

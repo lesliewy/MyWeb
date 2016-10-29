@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <title>Leslie WY</title>
+  <!-- 顺序很重要，后面的会覆盖前面的 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/style.css" >
+
+  <!--
+   <link rel="stylesheet" type="text/css" href="styles/animate.css" >
+  <link rel="stylesheet" type="text/css" href="styles/fancybox/jquery.fancybox.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href='http://fonts.useso.com/css?family=Raleway:200,400,800|Clicker+Script' >
+  -->
+  <!-- 图标 -->
+  <!--
+   <link rel="stylesheet" type="text/css" href="styles/font-awesome.css" >
+  -->
+  <!--[if lt IE 9]>
+  <script src="js/respond-1.1.0.min.js"></script>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/html5element.js"></script>
+  <![endif]-->
+  
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+
+
+<!--
+<script src="scripts/component.js"></script>
+-->
+
+</head>
+
+<body>
+<div class="container" style="padding: 0 15px;">  
+   <small>日期 </small>
+   <input type="text"  id="datetimepicker" class="datetimepicker" placeholder="请选择日期">
+</div>
+
+    <div class="well">
+         <div class="input-append date" id="datetimepicker1">
+         <input data-format="yyyy-MM-dd" type="text" />
+         <span class="add-on">
+              <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="icon-calendar">
+              </i>
+         </span>
+         </div>
+    </div>
+
+
+<script type="text/javascript">   
+   console.log($('#datetimepicker1'));
+   $('#datetimepicker1').datetimepicker({
+      language: 'zh-CN',
+      pickTime: false,
+      todayBtn: true,
+      autoclose: true,
+      minView: '2',
+      forceParse: false,
+      format:"yyyy-mm-dd"
+     });
+    </script>
+
+<!--
+
+-->
+</body>
+</html>
