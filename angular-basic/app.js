@@ -21,7 +21,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));  // 设置public目录为存放静态文件的目录
+// app.use(express.static(path.join(__dirname, 'public')));  // 设置public目录为存放静态文件的目录
+
 app.use(express.static(path.join(__dirname, 'app')));
 
 /*
@@ -29,7 +30,7 @@ app.use('/', routes);
 app.use('/users', users);
 */
 
-// angular 启动项
+/** angular 启动项 */
 var options = {
        root: __dirname,
        dotfiles: 'deny',
@@ -38,6 +39,7 @@ var options = {
           'x-sent': true
     }
 };
+/** 优先找express.static目录下的同名文件. */
 app.get('/', function (req, res) {
    res.sendFile('app/index.html', options);
 });
