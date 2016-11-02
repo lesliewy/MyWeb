@@ -1,7 +1,8 @@
 'use strict';
 
-// 注入ngRoute
-var app = angular.module('stock', ['ngRoute']);
+/** 创建模块 */
+var stockApp = angular.module('stock', []);
+var stoneStoryApp = angular.module('stoneStory', []);
 
 // 使用angular-route 来管理路由.
 /*

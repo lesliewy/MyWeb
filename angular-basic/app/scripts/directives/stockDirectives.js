@@ -3,7 +3,7 @@
    由于datepicker中的日期值只是set到DOM上，scope里没有，所以ng-model绑定不到.(原因可能是在digest循环之外?)
    这里通过changeDate事件手动的设置到scope的ng-model里面. 
 */
-app.directive('mydatepicker',function(){  
+stockApp.directive('mydatepicker',function(){  
     return {  
         restrict:'EA',  
         require: 'ngModel',  

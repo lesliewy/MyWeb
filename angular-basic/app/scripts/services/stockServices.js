@@ -1,4 +1,4 @@
-app.factory('analyseService', function($http) {
+stockApp.factory('analyseService', function($http) {
    var  url = 'http://127.0.0.1:8080';
    var runRequest = function(from, to, type) {
       return $http({

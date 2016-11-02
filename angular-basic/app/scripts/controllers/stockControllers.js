@@ -1,4 +1,4 @@
-app.controller("AnalyseCtrl", function ($scope, analyseService) {
+stockApp.controller("AnalyseCtrl", function ($scope, analyseService) {
    $scope.query = function (type) {
       var dtBegin = null;
       var dtEnd = null;
