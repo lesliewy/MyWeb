@@ -1,5 +1,3 @@
-
-
 * npm install -g express-generator:  安装可执行的 express,  npm 需要安装node.js. -g 表示全局的，在/opt/node-v4.4.3-linux-x64 目录下.
 * npm install -g bower: 安装bower
 * npm install -g grunt-cli: 安装grunt

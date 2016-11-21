@@ -5,7 +5,7 @@ stockApp.controller("AnalyseCtrl", function ($scope, analyseService) {
 
       if(type == "notionHot"){
         dtBegin = $scope.conditions.notionHotBegin;
-        dtEnd = $scope.conditions.notionHotEnd
+        dtEnd = $scope.conditions.notionHotEnd;
       }else if(type == "industryHot"){
         dtBegin = $scope.conditions.industryHotBegin;
         dtEnd = $scope.conditions.industryHotEnd;
@@ -56,11 +56,9 @@ stockApp.controller("AnalyseCtrl", function ($scope, analyseService) {
 
            var fields = record.split(',');
            // num notionName等必须加"",  而且{}内部必须使用"", 外面可以用'', 否则parse报错.
-           var jsonRecord = "{" + "\"num\":" + fields[4] + "," 
-                                + "\"" + name + "\":" + "\"" + fields[5] + "\"" + "," 
-                                + "\"totalChange\":" + fields[6] + ","
-                                + "\"corpsNum\":" + fields[7] 
-                                + "}";
+           var jsonRecord = "{" + "\"num\":" + fields[4] + "," + "\"" + name + "\":" + "\"" + fields[5] + 
+                                "\"" + "," + "\"totalChange\":" + fields[6] + ","+ 
+                                "\"corpsNum\":" + fields[7] + "}";
            // JSON.parse() 转为JSON对象.  反之用JSON.stringify(allJson)
            allJson.push(JSON.parse(jsonRecord));
         }
@@ -73,7 +71,7 @@ stockApp.controller("AnalyseCtrl", function ($scope, analyseService) {
         $scope.pages = Math.ceil($scope.data.length / $scope.pageSize);
         $scope.newPages = $scope.pages > 5 ? 5 : $scope.pages;
 
-        pagination($scope, dataName, pageName, pageListName)
+        pagination($scope, dataName, pageName, pageListName);
      
       }).error(function(data, status, headers, config){
         console.log("status: " + status + "   url: " + config.url);
@@ -133,4 +131,4 @@ pagination = function(scope, dataName, pageName, pageListName){
   scope.Next = function () {
      scope.selectPage(scope.selPage + 1);
   };
-}
+};
