@@ -24,7 +24,7 @@
    > 2. angular.js-1.5.8/docs目录下:  gulp
 
 
-* 在app.js目录下，执行 node ./bin/www 来启动server.
+* 在app.js目录下，执行 node ./bin/www 来启动server. 默认端口3000   http://127.0.0.1:3000/
 ---------------------------
 
 # 环境搭建
@@ -78,6 +78,7 @@ bower install bootstrap --save
 bower install angular-bootstrap --save
 修改index.html: 增加css, js的引用
 修改welcome.html: 增加bootstrap的效果
+
 
 # TODO
 * 初期可以用表格的方式，后期改成图
