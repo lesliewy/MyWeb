@@ -80,6 +80,10 @@ bower install angular-bootstrap --save
 修改welcome.html: 增加bootstrap的效果
 
 
+# bootstrap
+* 文档: http://v4.bootcss.com/getting-started/introduction/
+
+
 # TODO
 * 初期可以用表格的方式，后期改成图
 * 某时间段内概念、行业涨跌幅排名;
