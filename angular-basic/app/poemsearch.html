@@ -4,7 +4,6 @@
 <head>
    <!-- Required meta tags always come first -->
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
    <title>诗词检索</title>
    <!--
@@ -16,7 +15,7 @@
    <!-- 图标 -->
 </head>
 
-<body>
+<body ng-app="poem" ng-controller="poemSearchCtrl">
    <div class="container">
       <p>aaaaaaaaaaaa</p>
    </div>
@@ -39,25 +38,26 @@
       </span>
       <input type="text" class="form-control" placeholder="Search for...">
    </div>
-
-
-   <div class="container">
-      <div class="col-md-4">
-         <label for="name">起始回目:</label>
-         <select ng-model="beginChapter" class="form-control" ng-options="chapter.value as chapter.name for chapter in beginChapters" ng-              click="initEndChapters(beginChapter)">
-         </select>
-         <label for="name">结束回目:</label>
-         <select ng-model="endChapter" class="form-control" ng-options="chapter.value as chapter.name for chapter in endChapters">
-         </select>
-         <label> you choose {{beginChapter}} - {{endChapter}}</label>
-      </div>
-   </div>
    -->
+   <row>
+      <div class="col-md-2">
+         <label for="name">选择类别:</label>
+         <select ng-model="type" class="form-control" ng-options="type.value as type.name for type in types" ng-init="type='author'">
+         </select>
+      </div>
+      <div class="col-md-8">
+         <label for="name">值:</label>
+         <input type="text" class="form-control" placeholder="Search for...">
+         <button id="searchBtn" class="btn btn-secondary" type="button">Go!</button>
+      </div>
+   </row>
    <script src="bower_components/angular/angular.js"></script>
    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
    <script src="bower_components/angular-route/angular-route.min.js"></script>
    <script src="scripts/app.js"></script>
+   <script src="scripts/controllers/poemControllers.js"></script>
+   <script src="scripts/services/poemServices.js"></script>
    <!-- myUtils.js 里面都是function，没有执行语句, 顺序没什么关系 -->
    <script src="scripts/utils/myUtils.js"></script>
 </body>

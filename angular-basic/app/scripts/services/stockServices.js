@@ -1,16 +1,17 @@
 stockApp.factory('analyseService', function($http) {
-   var  url = 'http://127.0.0.1:8080';
+   console.log("this is stockApp.factory()")
+   var url = 'http://127.0.0.1:8080';
    var runRequest = function(from, to, type) {
       return $http({
          method: 'GET',
          url: url + '/stanalyse/analyse/' + type + '?from=' + from + '&to=' + to,
-         headers: { 'Content-Type': 'text/plain;charset=utf-8'}
-      }); 
+         headers: { 'Content-Type': 'text/plain;charset=utf-8' }
+      });
    };
 
-   var runJsonp = function(from, to, type){
+   var runJsonp = function(from, to, type) {
       var result = "leslie";
-      var url = "http://127.0.0.1:8080";    // 前面必须加http， 否则报404.
+      var url = "http://127.0.0.1:8080"; // 前面必须加http， 否则报404.
       var allUrl = url + '/stanalyse/analyse/' + type + '?callback=JSON_CALLBACK&from=' + from + '&to=' + to;
       var encodeUrl = encodeURI(allUrl);
       return $http.jsonp(encodeUrl);
@@ -21,5 +22,5 @@ stockApp.factory('analyseService', function($http) {
       call: function(from, to, type) {
          return runJsonp(from, to, type);
       }
-   };  
+   };
 });

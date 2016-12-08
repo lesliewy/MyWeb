@@ -90,4 +90,7 @@ bower install angular-bootstrap --save
 * 某时间段内某概念(某行业)内股票涨跌幅排名;
 * 
 * 模板1365: /home/leslie/Work/HTML/Template/moban1365
-
+* 视差滚动
+http://tnc.org.cn/
+https://segmentfault.com/q/1010000000601024
+http://www.cnblogs.com/e50000/p/5856064.html

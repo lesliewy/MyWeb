@@ -3,6 +3,7 @@
 /** 创建模块 */
 var stockApp = angular.module('stock', []);
 var stoneStoryApp = angular.module('stoneStory', []);
+var poemApp = angular.module('poem', []);
 
 // 使用angular-route 来管理路由.
 /*
