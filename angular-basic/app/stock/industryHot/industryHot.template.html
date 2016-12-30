@@ -1,0 +1,51 @@
+<div>
+   <!-- begin: industryHot -->
+   <section id="industryHot">
+      <div id="divMain">
+         <form name="industryHotForm" ng-submit="$ctrl.query('industryHot')">
+            <div class="input-append date input-group input-daterange">
+               <input id="industryHotBegin" name="industryHotBegin" class="span3" size="16" type="text" value="2016-01-03 15:00:00" mydatepicker ng-model="$ctrl.conditions.industryHotBegin" />
+               <span class="add-on">
+                  <i class="icon-calendar"></i>
+               </span>
+            </div>
+            <span class="input-group-addon">到</span>
+            <div>
+               <input name="industryHotEnd" id="industryHotEnd" size="16" type="text" value="" mydatepicker ng-model="$ctrl.conditions.industryHotEnd" />
+               <span class="add-on">
+                  <i class="icon-calendar"></i>
+               </span>
+            </div>
+            <input type="submit" value="查询" />
+         </form>
+         <table class="table table-striped table-bordered table-hover table-condensed">
+            <tr>
+               <th ng-repeat="(x,y) in $ctrl.industryHeadNames">{{ y }}</th>
+            </tr>
+            <tr ng-repeat="x in $ctrl.industryHotItems">
+               <td ng-bind="x.num"></td>
+               <td ng-bind="x.industryName"></td>
+               <td ng-bind="x.totalChange"></td>
+               <td ng-bind="x.corpsNum"></td>
+            </tr>
+         </table>
+         <nav class="pagination">
+            <ul>
+               <li>
+                  <a ng-click="$ctrl.Previous()">
+                     <span>上一页</span>
+                  </a>
+               </li>
+               <li ng-repeat="industryHotPage in $ctrl.industryHotPageList" ng-class="{active: $ctrl.isActivePage(industryHotPage)}">
+                  <a ng-click="$ctrl.selectPage(industryHotPage)">{{ industryHotPage }}</a>
+               </li>
+               <li>
+                  <a ng-click="$ctrl.Next()">
+                     <span>下一页</span>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </section>
+</div>

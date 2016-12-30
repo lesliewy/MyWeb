@@ -25,8 +25,8 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'app')));
 
+
 /*
-app.use('/', routes);
 app.use('/users', users);
 */
 
@@ -43,6 +43,8 @@ var options = {
 app.get('/', function (req, res) {
    res.sendFile('app/index.html', options);
 });
+
+// app.use('/', routes);
 
 // catch 404 and forward to error handler  放在路由的最后
 app.use(function(req, res, next) {
