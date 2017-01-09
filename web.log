@@ -1,0 +1,1070 @@
+
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+[0mGET / [32m200 [0m14.347 ms - 3743[0m
+[0mGET /styles/mystyle.css [32m200 [0m11.900 ms - 2606[0m
+[0mGET /styles/font-awesome.css [32m200 [0m10.369 ms - 35592[0m
+[0mGET /bower_components/requirejs/require.js [32m200 [0m13.352 ms - 86328[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [32m200 [0m11.730 ms - 146010[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [32m200 [0m0.661 ms - 71896[0m
+[0mGET /scripts/main.js [32m200 [0m0.619 ms - 1278[0m
+[0mGET /scripts/mybootstrap.js [32m200 [0m1.532 ms - 1018[0m
+[0mGET /favicon.ico [33m404 [0m18.033 ms - 1047[0m
+[0mGET /scripts/app.config.js [32m200 [0m1.545 ms - 2847[0m
+[0mGET /scripts/myApp.js [32m200 [0m1.837 ms - 217[0m
+[0mGET /core/core.module.js [32m200 [0m2.570 ms - 121[0m
+[0mGET /core/stock/core.stock.module.js [32m200 [0m3.906 ms - 94[0m
+[0mGET /core/stock/stock.service.js [32m200 [0m3.179 ms - 1269[0m
+[0mGET /core/stock/stock.directive.js [32m200 [0m1.876 ms - 1330[0m
+[0mGET /core/poem/core.poem.module.js [32m200 [0m2.578 ms - 161[0m
+[0mGET /core/poem/poemData.service.js [32m200 [0m0.436 ms - 414[0m
+[0mGET /core/poem/solr.service.js [32m200 [0m0.506 ms - 410[0m
+[0mGET /dashboard/dashboard.module.js [32m200 [0m2.183 ms - 93[0m
+[0mGET /dashboard/dashboard.component.js [32m200 [0m0.779 ms - 289[0m
+[0mGET /stock/stock.module.js [32m200 [0m0.338 ms - 182[0m
+[0mGET /stock/stock.component.js [32m200 [0m0.696 ms - 5002[0m
+[0mGET /stock/notionHot/notionHot.component.js [32m200 [0m0.830 ms - 5817[0m
+[0mGET /stock/industryHot/industryHot.component.js [32m200 [0m3.964 ms - 5906[0m
+[0mGET /stoneStory/stoneStory.module.js [32m200 [0m2.918 ms - 94[0m
+[0mGET /stoneStory/stoneStory.component.js [32m200 [0m0.757 ms - 294[0m
+[0mGET /poem/poem.module.js [32m200 [0m0.935 ms - 106[0m
+[0mGET /poem/poem.component.js [32m200 [0m0.569 ms - 356[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [32m200 [0m0.681 ms - 1196[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [32m200 [0m0.503 ms - 626[0m
+[0mGET /utils/myUtils.js [32m200 [0m0.342 ms - 180[0m
+[0mGET /scripts/lib/jquery/jquery.js [32m200 [0m1.722 ms - 267194[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [32m200 [0m1.610 ms - 34172[0m
+[0mGET /scripts/lib/angular/angular.js [32m200 [0m1.976 ms - 1187559[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [32m200 [0m0.490 ms - 38847[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [32m200 [0m0.478 ms - 35267[0m
+
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+[0mGET / [36m304 [0m14.133 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m1.722 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m1.189 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.886 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m0.556 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.419 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.324 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.383 ms - -[0m
+[0mGET /scripts/app.config.js [36m304 [0m0.358 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m2.054 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m3.237 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m3.247 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m3.260 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m3.014 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m0.386 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m0.313 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m0.369 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m0.338 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m49.750 ms - 1047[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m1.617 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m1.805 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m1.833 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m1.932 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m1.777 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.550 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m0.346 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.973 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m1.387 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m0.806 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m0.674 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m1.408 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m0.376 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m0.701 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m0.359 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m3.048 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.233 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.549 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m1.129 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.298 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css.map [32m200 [0m31.028 ms - 389287[0m
+[0mGET / [36m304 [0m15.499 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.472 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m0.381 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.777 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m0.323 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css.map [36m304 [0m0.364 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.337 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.355 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.314 ms - -[0m
+[0mGET /scripts/app.config.js [36m304 [0m0.305 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m0.208 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m0.321 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m0.335 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m2.606 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m2.678 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m1.763 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m0.538 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m0.548 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m0.334 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m0.372 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m0.264 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m0.241 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m1.043 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m6.729 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.933 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m1.049 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.338 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m0.328 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m0.193 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m0.297 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m0.575 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m0.527 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m0.426 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m0.337 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m0.338 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.252 ms - -[0m
+[0mGET /poem/poem.template.html [32m200 [0m55.814 ms - 87[0m
+[0mGET /poem/poemSearch/poemSearch.template.html [32m200 [0m30.800 ms - 1173[0m
+[0mGET / [36m304 [0m3.638 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m1.039 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m0.760 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.851 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m0.224 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css.map [36m304 [0m0.354 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.345 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.345 ms - -[0m
+[0mGET /scripts/mybootstrap.js [32m200 [0m1.287 ms - 1056[0m
+[0mGET /scripts/app.config.js [36m304 [0m0.338 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m0.293 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m0.284 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m0.697 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m0.744 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m0.770 ms - -[0m
+[0mGET /core/poem/poemMenu.directive.js [32m200 [0m0.801 ms - 498[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m1.566 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m0.282 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m1.312 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m0.342 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m0.259 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m0.341 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m0.300 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m0.762 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m0.296 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.324 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m3.436 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.538 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m0.265 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m0.194 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m0.390 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m0.401 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m0.206 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m0.233 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m0.294 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m0.338 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.294 ms - -[0m
+[0mGET /dashboard/dashboard.template.html [32m200 [0m8.191 ms - 31[0m
+[0mGET /poem/poem.template.html [32m200 [0m0.618 ms - 23[0m
+[0mGET /poemMenu.template.html [33m404 [0m4.156 ms - 1047[0m
+[0mGET / [36m304 [0m0.345 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.411 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m0.336 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m1.402 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m0.294 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.371 ms - -[0m
+[0mGET / [36m304 [0m1.410 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.319 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m0.223 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.328 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m0.296 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css.map [36m304 [0m0.712 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.389 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m6.195 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.564 ms - -[0m
+[0mGET /scripts/app.config.js [36m304 [0m1.872 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m0.321 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m0.361 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m2.215 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m1.291 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m2.043 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m2.507 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m0.876 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m0.196 ms - -[0m
+[0mGET /core/poem/poemMenu.directive.js [32m200 [0m0.533 ms - 508[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m0.958 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m0.690 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m0.691 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m0.450 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m0.577 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m0.694 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.683 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m0.681 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.207 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m3.776 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m0.636 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m0.839 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m0.944 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m0.339 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m1.239 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m1.268 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m0.340 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.328 ms - -[0m
+[0mGET /poem/poem.template.html [36m304 [0m0.310 ms - -[0m
+[0mGET /core/poem/poemMenu.template.html [32m200 [0m0.481 ms - 86[0m
+[0mGET /poem/poemSearch/poemSearch.template.html [32m200 [0m0.525 ms - 1197[0m
+typeof url: {
+    "protocol": null,
+    "slashes": null,
+    "auth": null,
+    "host": null,
+    "port": null,
+    "hostname": null,
+    "hash": null,
+    "search": "?searchContent=%E5%B1%88%E5%8E%9F&type=author_name",
+    "query": "searchContent=%E5%B1%88%E5%8E%9F&type=author_name",
+    "pathname": "/query",
+    "path": "/query?searchContent=%E5%B1%88%E5%8E%9F&type=author_name",
+    "href": "/query?searchContent=%E5%B1%88%E5%8E%9F&type=author_name"
+}
+url: /query?searchContent=%E5%B1%88%E5%8E%9F&type=author_name
+query: {
+    "searchContent": "屈原",
+    "type": "author_name"
+}
+q: {"author_name":"屈原"}
+{ responseHeader: 
+   { status: 0,
+     QTime: 46,
+     params: { start: '0', q: 'author_name:屈原', wt: 'json', rows: '1000' } },
+  response: 
+   { numFound: 27,
+     start: 0,
+     docs: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[0mGET /solr/query?searchContent=%E5%B1%88%E5%8E%9F&type=author_name [32m200 [0m638.709 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.template.html [32m200 [0m3.042 ms - 347[0m
+typeof url: {
+    "protocol": null,
+    "slashes": null,
+    "auth": null,
+    "host": null,
+    "port": null,
+    "hostname": null,
+    "hash": null,
+    "search": "?searchContent=chaxun%2Flist%2F7205.html&type=poem_url",
+    "query": "searchContent=chaxun%2Flist%2F7205.html&type=poem_url",
+    "pathname": "/query",
+    "path": "/query?searchContent=chaxun%2Flist%2F7205.html&type=poem_url",
+    "href": "/query?searchContent=chaxun%2Flist%2F7205.html&type=poem_url"
+}
+url: /query?searchContent=chaxun%2Flist%2F7205.html&type=poem_url
+query: {
+    "searchContent": "chaxun/list/7205.html",
+    "type": "poem_url"
+}
+q: {"poem_url":"chaxun/list/7205.html"}
+{ responseHeader: 
+   { status: 0,
+     QTime: 30,
+     params: 
+      { start: '0',
+        q: 'poem_url:chaxun/list/7205.html',
+        wt: 'json',
+        rows: '1000' } },
+  response: 
+   { numFound: 450,
+     start: 0,
+     docs: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        ... 350 more items ] } }
+[0mGET /solr/query?searchContent=chaxun%2Flist%2F7205.html&type=poem_url [32m200 [0m194.425 ms - -[0m
+[0mGET /stoneStory/stoneStory.template.html [32m200 [0m27.359 ms - 135[0m
+[0mGET /stock/stock.template.html [32m200 [0m23.902 ms - 217[0m
+[0mGET /stock/notionHot/notionHot.template.html [32m200 [0m7.457 ms - 2242[0m
+[0mGET /stock/industryHot/industryHot.template.html [32m200 [0m15.591 ms - 2141[0m
+[0mGET /stock [36m303 [0m1.516 ms - 45[0m
+[0mGET /stock/ [33m404 [0m20.268 ms - 1047[0m
+[0mGET /favicon.ico [33m404 [0m2.102 ms - 1047[0m
+
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+[0mGET // [32m200 [0m29.438 ms - 3743[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m2.372 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m1.127 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.417 ms - -[0m
+[0mGET / [36m304 [0m0.457 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.839 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m1.056 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.793 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m34.877 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.406 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.514 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.504 ms - -[0m
+[0mGET /scripts/app.config.js [36m304 [0m0.507 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m1.101 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m1.486 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m0.374 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m127.242 ms - 1047[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m3.982 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m58.657 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m57.284 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m57.334 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m57.822 ms - -[0m
+[0mGET /core/poem/poemMenu.directive.js [36m304 [0m1.395 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m0.705 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m0.943 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m0.931 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m2.200 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m2.209 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m1.766 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m1.400 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m1.387 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m1.382 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m0.629 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m0.728 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m0.725 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m0.353 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m0.308 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m0.237 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m0.307 ms - -[0m
+[0mGET /stoneStory [36m303 [0m8.542 ms - 55[0m
+[0mGET /stoneStory/ [33m404 [0m15.289 ms - 1047[0m
+[0mGET // [36m304 [0m0.403 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.365 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m0.948 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.313 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m0.265 ms - -[0m
+[0mGET / [36m304 [0m0.364 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.958 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m0.975 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.980 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m1.004 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.428 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.279 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.326 ms - -[0m
+[0mGET /scripts/app.config.js [36m304 [0m1.339 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m0.915 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m0.970 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m0.291 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m6.797 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m7.887 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m1.111 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m1.295 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m1.084 ms - -[0m
+[0mGET /core/poem/poemMenu.directive.js [36m304 [0m1.074 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m1.683 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m3.511 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m8.869 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m10.103 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m10.139 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m10.161 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.396 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m0.367 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.267 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m0.597 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m0.617 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m0.625 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m1.110 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m1.188 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m0.303 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m0.222 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m0.307 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.172 ms - -[0m
+[0mGET /stoneStory [36m303 [0m0.448 ms - 55[0m
+[0mGET /stoneStory/ [33m404 [0m1.655 ms - 1047[0m
+[0mGET // [36m304 [0m0.386 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.764 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m0.281 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.279 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m0.301 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.314 ms - -[0m
+[0mGET / [36m304 [0m0.338 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.347 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m0.253 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m0.190 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m0.208 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.752 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.372 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.324 ms - -[0m
+[0mGET /scripts/app.config.js [36m304 [0m1.118 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m1.084 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m1.073 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m0.927 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m1.485 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m1.593 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m1.585 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m0.204 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m0.417 ms - -[0m
+[0mGET /core/poem/poemMenu.directive.js [36m304 [0m0.414 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m1.679 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m1.720 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m1.718 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m1.468 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m1.386 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m1.370 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.447 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m0.906 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.908 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m0.241 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m0.459 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m0.203 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m1.805 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m1.190 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m6.606 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m7.803 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m0.586 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.280 ms - -[0m
+[0mGET / [36m304 [0m0.411 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m0.327 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m3.575 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m3.564 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m1.813 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m0.428 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.368 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.364 ms - -[0m
+[0mGET /scripts/app.config.js [36m304 [0m0.598 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m0.359 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m2.332 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m2.872 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m3.628 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m3.493 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m3.488 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m0.321 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m0.324 ms - -[0m
+[0mGET /core/poem/poemMenu.directive.js [36m304 [0m0.505 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m0.517 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m3.459 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m3.485 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m0.213 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m0.316 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m0.509 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.507 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m0.622 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.602 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m0.659 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m0.631 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m0.184 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m0.660 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m0.956 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m0.993 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m0.319 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m0.451 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.209 ms - -[0m
+[0mGET /stoneStory/stoneStory.template.html [36m304 [0m0.405 ms - -[0m
+[0mGET /stock/stock.template.html [36m304 [0m17.126 ms - -[0m
+[0mGET /stock/notionHot/notionHot.template.html [36m304 [0m3.775 ms - -[0m
+[0mGET /stock/industryHot/industryHot.template.html [36m304 [0m1.034 ms - -[0m
+
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+Port 3001 is already in use
+
+npm ERR! Linux 4.4.0-43-generic
+npm ERR! argv "/opt/nodejs/n/versions/node/7.2.1/bin/node" "/opt/nodejs/n/versions/node/7.2.1/bin/npm" "start"
+npm ERR! node v7.2.1
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! @ start: `./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ start script './bin/www'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the  package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     ./bin/www
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs 
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls 
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/leslie/MyProject/MyWeb/angular-basic/npm-debug.log
+
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+Terminated
+
+npm ERR! Linux 4.4.0-43-generic
+npm ERR! argv "/opt/nodejs/n/versions/node/7.2.1/bin/node" "/opt/nodejs/n/versions/node/7.2.1/bin/npm" "start"
+npm ERR! node v7.2.1
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! @ start: `./bin/www`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the @ start script './bin/www'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the  package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     ./bin/www
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs 
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls 
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/leslie/MyProject/MyWeb/angular-basic/npm-debug.log
+
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+stop solr.
+Found 1 Solr nodes running! Must either specify a port using -p or -all to stop all Solr nodes on this host.
+
+.solr stopped.
+startup solr.
+WARNING: Java version 1.7.0_45 has known bugs with Lucene and requires the -XX:-UseSuperWord flag. Please consider upgrading your JVM.
+
+Waiting up to 30 seconds to see Solr running on port 8983 [|]   [/]   [-]   [\]  .
+solr pid: 7824
+7886
+7887
+stop mongo. [|]  .mongo stopped.
+startup mongo. [/]   [-]  .
+mongo pid: 8021
+ [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]  
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+ [-]   [\]  
+Started Solr server on port 8983 (pid=7886). Happy searching!
+
+    [0mGET / [36m304 [0m8.890 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m1.815 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m1.424 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m2.153 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m3.599 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m1.140 ms - -[0m
+[0mGET /images/school.png [36m304 [0m0.918 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.361 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.422 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m125.799 ms - 1047[0m
+[0mGET /scripts/app.config.js [36m304 [0m2.161 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m2.707 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m3.002 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m3.006 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m2.422 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m0.288 ms - -[0m
+[0mGET /core/stock/stockMenu.directive.js [36m304 [0m0.871 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m1.249 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m0.520 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m0.510 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m0.318 ms - -[0m
+[0mGET /core/poem/SolrRandQuery.service.js [36m304 [0m0.326 ms - -[0m
+[0mGET /core/poem/poemMenu.directive.js [36m304 [0m0.801 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m0.189 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m0.383 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m0.406 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m0.299 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m0.553 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.211 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m0.846 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.478 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m0.278 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m0.607 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m0.833 ms - -[0m
+[0mGET /poem/poemRand/poemRand.component.js [36m304 [0m2.763 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m0.839 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m0.304 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m0.273 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m0.372 ms - -[0m
+[0mGET /scripts/lib/bootstrap/bootstrap.js [36m304 [0m0.373 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m0.316 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.293 ms - -[0m
+[0mGET /scripts/lib/angular-sanitize/angular-sanitize.js [36m304 [0m0.720 ms - -[0m
+stop solr.Sending stop command to Solr running on port 8983 ... waiting 5 seconds to allow Jetty process 7886 to stop gracefully.
+ [|]  . [/]   [-]  . [\]   [|]  . [/]   [-]  . [\]   [|]  . [/]      .solr stopped.
+stop mongo..mongo stopped.
+kill nodejs pid: 8164
+nodejs is killed
+Terminated
+
+npm ERR! Linux 4.4.0-43-generic
+npm ERR! argv "/opt/nodejs/n/versions/node/7.2.1/bin/node" "/opt/nodejs/n/versions/node/7.2.1/bin/npm" "start"
+npm ERR! node v7.2.1
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! @ start: `./bin/www`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the @ start script './bin/www'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the  package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     ./bin/www
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs 
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls 
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/leslie/MyProject/MyWeb/angular-basic/npm-debug.log
+stop solr.
+No Solr nodes found to stop.
+
+.solr stopped.
+kill shiny-server pid: 8493
+shiny-server is killed
+stop mongo..mongo stopped.
+nodejs is killed
+stop solr.
+No Solr nodes found to stop.
+
+.solr stopped.
+startup solr.
+WARNING: Java version 1.7.0_45 has known bugs with Lucene and requires the -XX:-UseSuperWord flag. Please consider upgrading your JVM.
+
+Waiting up to 30 seconds to see Solr running on port 8983 [|]   [/]   [-]   [\]  .
+solr pid: 8697
+8752
+8753
+shiny-server is killed
+startup shiny-server.[32m[2017-01-09 21:49:03.662] [INFO] shiny-server - [39mShiny Server v1.4.7.815 (Node.js v0.10.47)
+[32m[2017-01-09 21:49:03.664] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[32m[2017-01-09 21:49:03.714] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+ [|]  .
+shiny-server pid: 8809
+stop mongo. [/]   [-]  .mongo stopped.
+startup mongo. [\]   [|]  .
+mongo pid: 8908
+ [/]  
+Started Solr server on port 8983 (pid=8752). Happy searching!
+
+    
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+[0mGET / [36m304 [0m7.604 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m15.400 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m27.316 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m26.189 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m32.815 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m1.089 ms - -[0m
+[0mGET /images/school.png [36m304 [0m0.305 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.312 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.335 ms - -[0m
+[0mGET /scripts/app.config.js [36m304 [0m0.326 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m2.360 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m3.279 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m4.234 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m4.550 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m2.917 ms - -[0m
+[0mGET /core/stock/stockMenu.directive.js [36m304 [0m0.529 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m0.555 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m0.201 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m1.575 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m1.772 ms - -[0m
+[0mGET /core/poem/SolrRandQuery.service.js [36m304 [0m2.022 ms - -[0m
+[0mGET /core/poem/poemMenu.directive.js [36m304 [0m2.290 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m3.421 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m6.495 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m7.179 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m0.285 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m0.473 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.764 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m0.199 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.637 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m0.306 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m1.069 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m1.543 ms - -[0m
+[0mGET /poem/poemRand/poemRand.component.js [36m304 [0m1.612 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m1.907 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m0.903 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m0.350 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m0.387 ms - -[0m
+[0mGET /scripts/lib/bootstrap/bootstrap.js [36m304 [0m0.346 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m0.339 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.259 ms - -[0m
+[0mGET /scripts/lib/angular-sanitize/angular-sanitize.js [36m304 [0m0.190 ms - -[0m
+[0mGET /dashboard/dashboard.template.html [36m304 [0m0.416 ms - -[0m
+[0mGET /stock/stock.template.html [36m304 [0m0.891 ms - -[0m
+[0mGET /core/stock/stockMenu.template.html [36m304 [0m0.345 ms - -[0m
+[0mGET /images/cardboard_flat.png [36m304 [0m0.277 ms - -[0m
+[0mGET /stock/notionHot/notionHot.template.html [36m304 [0m0.516 ms - -[0m
+[0mGET /stock/industryHot/industryHot.template.html [36m304 [0m0.664 ms - -[0m
+stop solr.Sending stop command to Solr running on port 8983 ... waiting 5 seconds to allow Jetty process 8752 to stop gracefully.
+ [|]   [/]  . [-]   [\]  . [|]  . [/]   [-]  . [\]   [|]  . [/]      .solr stopped.
+kill shiny-server pid: 8809
+8984
+shiny-server is killed
+stop mongo..mongo stopped.
+kill nodejs pid: 8962
+nodejs is killed
+Terminated
+
+npm ERR! Linux 4.4.0-43-generic
+npm ERR! argv "/opt/nodejs/n/versions/node/7.2.1/bin/node" "/opt/nodejs/n/versions/node/7.2.1/bin/npm" "start"
+npm ERR! node v7.2.1
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! @ start: `./bin/www`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the @ start script './bin/www'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the  package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     ./bin/www
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs 
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls 
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/leslie/MyProject/MyWeb/angular-basic/npm-debug.log
+stop solr.
+No Solr nodes found to stop.
+
+.solr stopped.
+startup solr.
+WARNING: Java version 1.7.0_45 has known bugs with Lucene and requires the -XX:-UseSuperWord flag. Please consider upgrading your JVM.
+
+Waiting up to 30 seconds to see Solr running on port 8983 [|]   [/]   [-]   [\]  .
+solr pid: 9302
+9357
+9358
+kill shiny-server pid: 8809
+8984
+shiny-server is killed
+startup shiny-server. [|]  [32m[2017-01-09 21:53:44.038] [INFO] shiny-server - [39mShiny Server v1.4.7.815 (Node.js v0.10.47)
+[32m[2017-01-09 21:53:44.040] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[32m[2017-01-09 21:53:44.092] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[31m[2017-01-09 21:53:44.098] [ERROR] shiny-server - [39mHTTP server error (0.0.0.0:3838): listen EADDRINUSE
+[32m[2017-01-09 21:53:44.099] [INFO] shiny-server - [39mShutting down worker processes
+1000 [/]  .
+shiny-server pid: 8809
+8984
+ [-]   [\]  startup mongo. [|]  .
+mongo pid: 9515
+ [/]  ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock ok.
+Started Solr server on port 8983 (pid=9357). Happy searching!
+
+    
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+[0mGET / [36m304 [0m8.898 ms - -[0m
+[0mGET /bower_components/bootstrap/dist/css/bootstrap.css [36m304 [0m1.799 ms - -[0m
+[0mGET /styles/mystyle.css [36m304 [0m0.988 ms - -[0m
+[0mGET /styles/font-awesome.css [36m304 [0m1.061 ms - -[0m
+[0mGET /bower_components/requirejs/require.js [36m304 [0m0.335 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.6.3 [36m304 [0m1.408 ms - -[0m
+[0mGET /images/school.png [36m304 [0m0.313 ms - -[0m
+[0mGET /scripts/main.js [36m304 [0m0.344 ms - -[0m
+[0mGET /scripts/mybootstrap.js [36m304 [0m0.397 ms - -[0m
+[0mGET /scripts/app.config.js [36m304 [0m0.350 ms - -[0m
+[0mGET /scripts/myApp.js [36m304 [0m0.328 ms - -[0m
+[0mGET /core/core.module.js [36m304 [0m0.313 ms - -[0m
+[0mGET /core/stock/core.stock.module.js [36m304 [0m0.214 ms - -[0m
+[0mGET /core/stock/stock.service.js [36m304 [0m2.226 ms - -[0m
+[0mGET /core/stock/stock.directive.js [36m304 [0m2.476 ms - -[0m
+[0mGET /core/stock/stockMenu.directive.js [36m304 [0m0.192 ms - -[0m
+[0mGET /dashboard/dashboard.module.js [36m304 [0m0.258 ms - -[0m
+[0mGET /core/poem/core.poem.module.js [36m304 [0m3.711 ms - -[0m
+[0mGET /core/poem/poemData.service.js [36m304 [0m4.133 ms - -[0m
+[0mGET /core/poem/solr.service.js [36m304 [0m1.832 ms - -[0m
+[0mGET /core/poem/SolrRandQuery.service.js [36m304 [0m0.228 ms - -[0m
+[0mGET /core/poem/poemMenu.directive.js [36m304 [0m0.448 ms - -[0m
+[0mGET /dashboard/dashboard.component.js [36m304 [0m0.827 ms - -[0m
+[0mGET /stock/stock.module.js [36m304 [0m0.685 ms - -[0m
+[0mGET /stock/stock.component.js [36m304 [0m0.699 ms - -[0m
+[0mGET /stock/notionHot/notionHot.component.js [36m304 [0m0.724 ms - -[0m
+[0mGET /stock/industryHot/industryHot.component.js [36m304 [0m0.539 ms - -[0m
+[0mGET /stoneStory/stoneStory.module.js [36m304 [0m0.848 ms - -[0m
+[0mGET /stoneStory/stoneStory.component.js [36m304 [0m0.873 ms - -[0m
+[0mGET /poem/poem.module.js [36m304 [0m0.764 ms - -[0m
+[0mGET /poem/poem.component.js [36m304 [0m0.865 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.component.js [36m304 [0m1.157 ms - -[0m
+[0mGET /poem/poemDetail/poemDetail.component.js [36m304 [0m1.263 ms - -[0m
+[0mGET /poem/poemRand/poemRand.component.js [36m304 [0m1.179 ms - -[0m
+[0mGET /utils/myUtils.js [36m304 [0m1.222 ms - -[0m
+[0mGET /scripts/lib/angular/angular.js [36m304 [0m0.339 ms - -[0m
+[0mGET /scripts/lib/jquery/jquery.js [36m304 [0m0.552 ms - -[0m
+[0mGET /scripts/lib/bootstrap-datepicker/bootstrap-datepicker.min.js [36m304 [0m0.522 ms - -[0m
+[0mGET /scripts/lib/bootstrap/bootstrap.js [36m304 [0m0.926 ms - -[0m
+[0mGET /scripts/lib/angular-route/angular-route.js [36m304 [0m0.351 ms - -[0m
+[0mGET /scripts/lib/angular-resource/angular-resource.js [36m304 [0m0.296 ms - -[0m
+[0mGET /scripts/lib/angular-sanitize/angular-sanitize.js [36m304 [0m0.250 ms - -[0m
+[0mGET /dashboard/dashboard.template.html [36m304 [0m0.472 ms - -[0m
+[0mGET /stock/stock.template.html [36m304 [0m0.848 ms - -[0m
+[0mGET /core/stock/stockMenu.template.html [36m304 [0m0.338 ms - -[0m
+[0mGET /stock/notionHot/notionHot.template.html [36m304 [0m0.278 ms - -[0m
+[0mGET /stock/industryHot/industryHot.template.html [36m304 [0m0.222 ms - -[0m
+[0mGET /images/cardboard_flat.png [36m304 [0m0.297 ms - -[0m
+[0mGET /stoneStory/stoneStory.template.html [36m304 [0m0.349 ms - -[0m
+[0mGET /poem/poemRand/poemRand.template.html [36m304 [0m0.315 ms - -[0m
+[0mGET /core/poem/poemMenu.template.html [36m304 [0m0.560 ms - -[0m
+ids: 74,64,131,110,278,28,443,305,286,369
+q: (id:0 OR id:74 OR id:64 OR id:131 OR id:110 OR id:278 OR id:28 OR id:443 OR id:305 OR id:286 OR id:369)
+{ responseHeader: 
+   { status: 0,
+     QTime: 496,
+     params: 
+      { start: '0',
+        q: '(id:0 OR id:74 OR id:64 OR id:131 OR id:110 OR id:278 OR id:28 OR id:443 OR id:305 OR id:286 OR id:369)',
+        wt: 'json',
+        rows: '1000' } },
+  response: 
+   { numFound: 10,
+     start: 0,
+     docs: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[0mGET /solr/randquery [32m200 [0m887.347 ms - -[0m
+[0mGET /poem/poemSearch/poemSearch.template.html [36m304 [0m1.038 ms - -[0m
+ids: 375,391,431,336,34,210,330,283,6,207
+q: (id:0 OR id:375 OR id:391 OR id:431 OR id:336 OR id:34 OR id:210 OR id:330 OR id:283 OR id:6 OR id:207)
+{ responseHeader: 
+   { status: 0,
+     QTime: 13,
+     params: 
+      { start: '0',
+        q: '(id:0 OR id:375 OR id:391 OR id:431 OR id:336 OR id:34 OR id:210 OR id:330 OR id:283 OR id:6 OR id:207)',
+        wt: 'json',
+        rows: '1000' } },
+  response: 
+   { numFound: 10,
+     start: 0,
+     docs: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[0mGET /solr/randquery [32m200 [0m81.188 ms - -[0m
+stop solr.Sending stop command to Solr running on port 8983 ... waiting 5 seconds to allow Jetty process 9357 to stop gracefully.
+ [|]   [/]  . [-]   [\]  . [|]  . [/]   [-]  . [\]   [|]  . [/]      .solr stopped.
+kill shiny-server pid: 8809
+shiny-server is killed
+[32m[2017-01-09 21:55:31.855] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+stop mongo.[32m[2017-01-09 21:55:31.855] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+1000.mongo stopped.
+kill nodejs pid: 9570
+nodejs is killed
+Terminated
+
+npm ERR! Linux 4.4.0-43-generic
+npm ERR! argv "/opt/nodejs/n/versions/node/7.2.1/bin/node" "/opt/nodejs/n/versions/node/7.2.1/bin/npm" "start"
+npm ERR! node v7.2.1
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! @ start: `./bin/www`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the @ start script './bin/www'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the  package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     ./bin/www
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs 
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls 
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/leslie/MyProject/MyWeb/angular-basic/npm-debug.log
+stop solr.
+No Solr nodes found to stop.
+
+.solr stopped.
+startup solr.
+WARNING: Java version 1.7.0_45 has known bugs with Lucene and requires the -XX:-UseSuperWord flag. Please consider upgrading your JVM.
+
+Waiting up to 30 seconds to see Solr running on port 8983 [|]   [/]   [-]   [\]  .
+solr pid: 9938
+9993
+9994
+shiny-server is killed
+startup shiny-server. [|]  [32m[2017-01-09 21:59:08.186] [INFO] shiny-server - [39mShiny Server v1.4.7.815 (Node.js v0.10.47)
+[32m[2017-01-09 21:59:08.200] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[32m[2017-01-09 21:59:08.325] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+ [/]  .
+shiny-server pid: 10050
+stop mongo. [-]   [\]  .mongo stopped.
+startup mongo. [|]  . [/]  
+mongo pid: 10155
+ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock ok.
+Started Solr server on port 8983 (pid=9993). Happy searching!
+
+    
+> @ start /home/leslie/MyProject/MyWeb/angular-basic
+> ./bin/www
+
+stop solr.Sending stop command to Solr running on port 8983 ... waiting 5 seconds to allow Jetty process 9993 to stop gracefully.
+ [|]   [/]  . [-]   [\]  . [|]  . [/]   [-]  . [\]   [|]  . [/]      .solr stopped.
+kill shiny-server pid: 10050
+shiny-server is killed
+stop mongo.[32m[2017-01-09 22:03:13.934] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2017-01-09 22:03:13.935] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+1000.mongo stopped.
+kill nodejs pid: 10206
+nodejs is killed
+Terminated
+
+npm ERR! Linux 4.4.0-43-generic
+npm ERR! argv "/opt/nodejs/n/versions/node/7.2.1/bin/node" "/opt/nodejs/n/versions/node/7.2.1/bin/npm" "start"
+npm ERR! node v7.2.1
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! @ start: `./bin/www`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the @ start script './bin/www'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the  package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     ./bin/www
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs 
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls 
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/leslie/MyProject/MyWeb/angular-basic/npm-debug.log

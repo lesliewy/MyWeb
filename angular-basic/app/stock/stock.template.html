@@ -1,7 +1,14 @@
-<div>
-   <notion-hot-compon></notion-hot-compon>
-   <industry-hot-compon></industry-hot-compon>
-</div>
-<div>
-   <iframe src="http://127.0.0.1:3838/stocknotion/" width="100%" height=888 scrolling="no"></iframe>
+<div class="stock">
+   <stock-menu></stock-menu>
+   <div class="stock-body">
+      <div>
+         <notion-hot-compon></notion-hot-compon>
+      </div>
+      <div>
+         <industry-hot-compon></industry-hot-compon>
+      </div>
+      <div id="correlation">
+         <iframe src="http://127.0.0.1:3838/stocknotion/" width="100%" height=888 scrolling="no"></iframe>
+      </div>
+   </div>
 </div>

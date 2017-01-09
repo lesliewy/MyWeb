@@ -1,0 +1,12 @@
+{
+   "types": [{
+      "name": "作者",
+      "value": "author"
+   }, {
+      "name": "标题",
+      "value": "poemName"
+   }, {
+      "name": "内容",
+      "value": "content"
+   }]
+}

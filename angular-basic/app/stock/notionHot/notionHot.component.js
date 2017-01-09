@@ -12,17 +12,22 @@ define(['angular'], function(angular) {
                var dtBegin = null;
                var dtEnd = null;
 
-               if (type == "notionHot") {
-                  dtBegin = this.conditions.notionHotBegin;
-                  dtEnd = this.conditions.notionHotEnd;
-               } else if (type == "industryHot") {
-                  dtBegin = this.conditions.industryHotBegin;
-                  dtEnd = this.conditions.industryHotEnd;
+               // 打开页面第一次查询.  此时没有this.conditions
+               if (this.conditions == undefined || this.conditions == null) {
+                  dtBegin = "2016-01-03 15:00:00";
+                  dtEnd = "2016-01-15 15:00:00";
                } else {
-                  console.log(type + " error, must be notionHot or industryHot");
-                  return;
+                  if (type == "notionHot") {
+                     dtBegin = this.conditions.notionHotBegin;
+                     dtEnd = this.conditions.notionHotEnd;
+                  } else if (type == "industryHot") {
+                     dtBegin = this.conditions.industryHotBegin;
+                     dtEnd = this.conditions.industryHotEnd;
+                  } else {
+                     console.log(type + " error, must be notionHot or industryHot");
+                     return;
+                  }
                }
-
                var promise = StockAnalyse.call(dtBegin, dtEnd, type);
                promise.success(function(data, status, headers, config) {
                   console.log("status: " + status + "   url: " + config.url + " type: " + type);
@@ -86,7 +91,8 @@ define(['angular'], function(angular) {
                   console.log("status: " + status + "   url: " + config.url);
                });
             };
-
+            // 初始时执行一次查询
+            this.query("notionHot");
          }
       ]
    });

@@ -1,0 +1,16 @@
+<div class='poem'>
+   <poem-menu></poem-menu>
+   <div id="randPoem" class='poem-body'>
+      <ul id="stage">
+         <li ng-repeat="doc in $ctrl.docs">
+            <a href="/poem{{doc.poem_url}}">{{ doc.poem_name}}</a>
+            <!-- 必须引入 ngSanitize. poem.module(['ngSanitize'])-->
+            <p ng-bind-html="doc.poem_content"></p>
+         </li>
+      </ul>
+   </div>
+</div>
+<script>
+// 滚动条至底刷新.
+refreshRandPoems();
+</script>

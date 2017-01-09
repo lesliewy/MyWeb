@@ -1,0 +1,57 @@
+<div>
+   <poem-menu></poem-menu>
+   <div class='poem-body'>
+      <row>
+         <div>
+            <label for="name">类别:</label>
+            <select ng-model="$ctrl.type" ng-options="type.value as type.name for type in $ctrl.types" ng-init="$ctrl.type='author_name'">
+            </select>
+            <label for="name">值:</label>
+            <input type="text" ng-model="$ctrl.searchContent" placeholder="Search for...">
+            <button id="searchBtn" class="btn" ng-click="$ctrl.query()">查询</button>
+         </div>
+         <!--
+         <div class="col-lg-6">
+            <div class="input-group">
+               <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action
+                     <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                     <li>
+                        <a href="#">Action</a>
+                     </li>
+                     <li>
+                        <a href="#">Another action</a>
+                     </li>
+                     <li>
+                        <a href="#">Something else here</a>
+                     </li>
+                     <li class="divider"></li>
+                     <li>
+                        <a href="#">Separated link</a>
+                     </li>
+                  </ul>
+               </div>
+               <input type="text" class="form-control">
+               <input type="button" id="searchBtn" class="form-control" ng-click="$ctrl.query()" value="查询"/>
+            </div>
+         </div>
+         -->
+      </row>
+      <row>
+         <ul>
+            <!-- 按标题搜索伐檀如果不加 ”“, 会把伐柯也搜索出来.还不知道怎么在solr-client中添加"", 这里使用filter过滤掉 -->
+            <li ng-repeat="doc in $ctrl.docs | filter:$ctrl.searchContent | orderBy:$ctrl.orderProp">
+               <!-- <a href="#!/phones/{{phone.id}}" class="thumb">
+         <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
+      </a>
+      <a href="#!/phones/{{phone.id}}">{{phone.name}}</a>
+      <p>{{phone.snippet}}</p> -->
+               <a href="/poem{{doc.poem_url}}">{{ doc.poem_name}}</a>
+               <p>{{doc.poem_content.substr(0, 30)}}</p>
+            </li>
+         </ul>
+      </row>
+   </div>
+</div>

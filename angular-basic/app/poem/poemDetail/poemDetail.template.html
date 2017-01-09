@@ -1,0 +1,11 @@
+<poem-menu></poem-menu>
+<row>
+   <p>{{$ctrl.poem.poem_name}}</p>
+   <p>年代: {{$ctrl.poem.category_name}} 作者:{{$ctrl.poem.author_name}}</p>
+   <p id="poemContent"></p>
+   <div ng-if="$ctrl.poem.poem_tags.length > 0">
+      <p>分类标签:{{$ctrl.poem.poem_tags}}</p>
+   </div>
+   <p>作品赏析</p>
+   <p id="poemAppreciation"></p>
+</row>

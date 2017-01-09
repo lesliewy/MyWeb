@@ -7,6 +7,7 @@
 
 * bower:  查看bower的命令说明.
 * bower install angular --save: 将依赖写入bower.json
+* bower install angular-sanitize#1.5.8 --save : 安装指定版本.
 * bower uninstall angular: 将angualr模块删除，bower.json中的配置没有删除.
 * bower uninstall angular-route --save:  将angualr模块删除，同时删除bower.json中的配置.
 * bower search bootstrap-datepicker: 查找github上是否存在某包.

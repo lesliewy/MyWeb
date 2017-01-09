@@ -25,16 +25,16 @@ define(['angular', 'require', 'angular-route', 'myApp'], function(angular, requi
          $routeProvider.
          when('/stock', {
             template: '<stock-compon></stock-compon>'
-            /*
-            templateUrl: 'stock.html',
-            controller: 'AnalyseCtrl'
-               // resolve: {
-               这个key值会被注入到controller中，对应的是后边这个function返回的值，或者promise最终resolve的值。函数的参数是所需的服务，angular会根据参数名自动注入
-                对应controller写法（注意keyName）：
-                controllers.controller('module2Controller', ['$scope', '$http', 'keyName',
-                    function($scope, $http, keyName) {
-                }]);
-                */
+               /*
+               templateUrl: 'stock.html',
+               controller: 'AnalyseCtrl'
+                  // resolve: {
+                  这个key值会被注入到controller中，对应的是后边这个function返回的值，或者promise最终resolve的值。函数的参数是所需的服务，angular会根据参数名自动注入
+                   对应controller写法（注意keyName）：
+                   controllers.controller('module2Controller', ['$scope', '$http', 'keyName',
+                       function($scope, $http, keyName) {
+                   }]);
+                   */
                /*
                keyName: function($q) {
                   console.log("this is /stock resolve");
@@ -50,14 +50,20 @@ define(['angular', 'require', 'angular-route', 'myApp'], function(angular, requi
 
          }).
          when('/dashboard', {
-            template: '<dashboard-compon></dashboard-compon>',
-         }).
-         when('/poem', {
-            templateUrl: 'poem.html',
-            controller: 'poemSearchCtrl'
+            template: '<dashboard-compon></dashboard-compon>'
          }).
          when('/stoneStory', {
             template: '<stone-story-compon></stone-story-compon>'
+         }).
+         when('/poem', {
+            template: '<poem-compon></poem-compon>'
+         }).
+         when('/poemSearch', {
+            template: '<poem-search-compon></poem-search-compon>'
+         }).when('/poem/:poemUrl*', {
+            template: '<poem-detail-compon></poem-detail-compon>'
+         }).when('/poemRand', {
+            template: '<poem-rand-compon></poem-rand-compon>'
          }).
          otherwise({
             redirectTo: '/'

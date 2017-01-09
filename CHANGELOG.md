@@ -7,12 +7,17 @@
 - **2016-09-12**: 开始. 前端使用angularjs.
 - **2016-10-05**: 使用R shiny分析.
 - **2016-11-15**: 使用python获取诗词，存入mongodb
-- **2016-12-12**: 添加requirejs,
+- **2016-12-12**: 添加requirejs.
+- **2016-12-29**: 取消之前的byType(controller/, services/, filters/, directives/, ...), 改用byFeature(stock/, poem/, stoneStory/, ...)
+- **2017-01-04**: 开始搭建阿里云服务器, 安装node,mysql,mongodb,solr等软件. 申请域名.
+
+
 
 ## Performance Improvements
 
 
-
+## Bug
+- ** 股票页面点击menu到指定位置后，页面会刷新，之前的没有了. 之前选择的条件也没有了.
 
 
 

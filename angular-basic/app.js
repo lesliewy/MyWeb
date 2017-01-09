@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var solr = require('./solr/solr');
 
 var app = express();
 
@@ -44,7 +45,7 @@ app.get('/', function (req, res) {
    res.sendFile('app/index.html', options);
 });
 
-// app.use('/', routes);
+app.use('/solr', solr);
 
 // catch 404 and forward to error handler  放在路由的最后
 app.use(function(req, res, next) {
