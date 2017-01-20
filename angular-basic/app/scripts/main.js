@@ -9,6 +9,7 @@ require.config({
       'angular-route': './lib/angular-route/angular-route',
       'angular-sanitize': './lib/angular-sanitize/angular-sanitize',
       'angular-resource': './lib/angular-resource/angular-resource',
+      'angular-animate': './lib/angular-animate/angular-animate',
       'ui-bootstrap-tpls': './lib/angular-bootstrap/ui-bootstrap-tpls'
    },
    shim: {
@@ -24,6 +25,9 @@ require.config({
          deps:['angular']
       },
       'angular-sanitize': {
+         deps: ['angular']
+      },
+      'angular-animate': {
          deps: ['angular']
       },
       'bootstrap':{

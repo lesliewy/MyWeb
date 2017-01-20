@@ -1,6 +1,6 @@
-<div>
+<div class="poem">
    <poem-menu></poem-menu>
-   <div class='poem-body'>
+   <div class='poem-body search-body'>
       <row>
          <div>
             <label for="name">类别:</label>
@@ -9,6 +9,8 @@
             <label for="name">值:</label>
             <input type="text" ng-model="$ctrl.searchContent" placeholder="Search for...">
             <button id="searchBtn" class="btn" ng-click="$ctrl.query()">查询</button>
+            <label for="name">结果中过滤:</label>
+            <input type="text" ng-model="$ctrl.filtercontent" placeholder="filter results ...">
          </div>
          <!--
          <div class="col-lg-6">
@@ -40,16 +42,28 @@
          -->
       </row>
       <row>
-         <ul>
-            <!-- 按标题搜索伐檀如果不加 ”“, 会把伐柯也搜索出来.还不知道怎么在solr-client中添加"", 这里使用filter过滤掉 -->
-            <li ng-repeat="doc in $ctrl.docs | filter:$ctrl.searchContent | orderBy:$ctrl.orderProp">
-               <!-- <a href="#!/phones/{{phone.id}}" class="thumb">
-         <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
-      </a>
-      <a href="#!/phones/{{phone.id}}">{{phone.name}}</a>
-      <p>{{phone.snippet}}</p> -->
-               <a href="/poem{{doc.poem_url}}">{{ doc.poem_name}}</a>
-               <p>{{doc.poem_content.substr(0, 30)}}</p>
+         <ul class="animate-container">
+            <!-- 按标题搜索伐檀如果不加 ”“, 会把伐柯也搜索出来.还不知道怎么在solr-client中添加""
+               as results 必须放最后.
+             -->
+            <li class="animate-repeat" ng-repeat="doc in $ctrl.docs | filter:$ctrl.filtercontent | orderBy:$ctrl.orderProp as results">
+               <!-- <a href="/poem{{doc.poem_url}}">{{ doc.poem_name}}</a> -->
+               <div class="poemname">{{$index + 1}}. {{ doc.poem_name }}</div>
+               <div>
+                  <!--  -->
+                  <div ng-class="$ctrl.poembriefclasses[$index]" ng-bind-html="doc.poem_content.substr(0, 50)">
+                  </div>
+                  <div ng-class="$ctrl.poemallclasses[$index]">
+                     <p ng-bind-html="doc.poem_content"></p>
+                     <p class="poemappreciationtitle">诗词鉴赏</p>
+                     <p class="poemappreciation" ng-bind-html="doc.poem_appreciation"></p>
+                  </div>
+                  <!-- -->
+                  <a ng-click="$ctrl.foldtoggle($index)">{{$ctrl.showbtns[$index]}}</a>
+               </div>
+            </li>
+            <li class="animate-repeat" ng-if="results.length == 0">
+               <strong>No results found...</strong>
             </li>
          </ul>
       </row>

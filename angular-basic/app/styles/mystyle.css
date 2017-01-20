@@ -1,3 +1,50 @@
+/**
+ *
+ * 公共
+ *
+ **/
+
+.hiddenanchor {
+   display: block;
+   position: relative;
+   top: -50px;
+   /* 首部元素高度 */
+   visibility: hidden;
+}
+
+
+/** 覆盖 user agent stylesheet **/
+
+iframe {
+   border-width: 1px;
+   border-style: inset;
+   border-color: initial;
+   border-image: initial;
+}
+
+.showinline {
+   display: inline;
+}
+
+.hidden {
+   display: hidden;
+}
+
+.mybody {
+   position: relative;
+   left: 200px;
+   height: 100%;
+   width: 1160px;
+   overflow-x: hidden;
+}
+
+
+/**
+ * 
+ * 左边栏
+ *
+ **/
+
 .page-container {
    min-width: 1260px;
    position: relative;
@@ -25,15 +72,6 @@
    -webkit-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
    -moz-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
    z-index: 999;
-}
-
-.mybody {
-   position: absolute;
-   top: 0;
-   left: 200px;
-   right: 0;
-   bottom: 0;
-   background: url(../images/school.png);
 }
 
 .test1 {
@@ -144,28 +182,175 @@
    opacity: 1;
 }
 
+/** 
+ * 
+ * Dashboard
+ *
+ **/
+.region-box{
+   border: 1px solid #ccd6e0;
+   padding: 0;
+}
+.region-titile-bar{
+   border-bottom: 1px solid #ccd6e0;
+   background-color: #f8f9fb;
+   height: 38px;
+}
+.region-content{
+   padding: 28px 24px;
+   height: 202px; /** todo: 先直接写死了.**/
+}
+
+/** 去掉默认的ul**/
+.region-content ul{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.region-content ul li{
+   width: 160px;
+   height: 24px;
+   margin-bottom: 16px;
+   background-color: #f3f3f3;
+   border-radius: 4px;
+   font-size: 12px;
+   padding-left: 16px;
+   line-height: 24px;
+}
+.relation-line{
+   width: 64px;
+   height: 126px;
+   margin: 10px 6px;
+   background: url(../images/ecs.png) no-repeat 0 0;
+}
+.region-content-text{
+   float: left;
+}
+
+.region-content-data{
+   float: right;
+   color: green;
+}
+
+
 /** 股票页面 **/
-.stock{
+
+.stock {
    padding-top: 10px;
    padding-left: 10px;
    background: url(../images/cardboard_flat.png);
 }
+
 .stock-body {
-   margin-top: 50px;
+   /*margin-top: 50px;*/
+}
+
+.stock-fix-top {
+   /*
+   position: fixed;
+   top: 0;
+   */
+   border-width: 0 0 1px;
+   z-index: 1030;
+}
+
+
+/** 红楼梦 **/
+
+.stonestory-fix-top {
+   /*position: fixed;
+   top: 0;*/
+   border-width: 0 0 1px;
+   z-index: 1030;
+}
+
+.stonestory-body {
+   /*margin-top: 50px;*/
 }
 
 
 /** 诗词页面 **/
 
-.poem-body {
-   margin-top: 50px;
+.poem {
    background: url(../images/school.png);
+   min-height: 1100px; /* 使背景至少填充整个屏幕. */
 }
 
-.my-fix-top {
+.poem-body {
+   margin-top: 50px;
+   padding-top: 10px;
+}
+
+.poem-fix-top {
    position: fixed;
    top: 0;
    left: 200px;
    border-width: 0 0 1px;
    z-index: 1030;
+}
+
+.poemname {
+   color: #337ab7;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.authorname {
+   color: #337ab7;
+   text-decoration: none;
+   font-size: 12px;
+}
+
+.poemappreciationtitle {
+   font-weight: bold;
+   font-size: 16px;
+   padding-top: 20px;
+}
+
+.poemappreciation a {
+   pointer-events: none;
+   cursor: default;
+   color: #000000;
+}
+/*
+.search-body {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 200px;
+}
+*/
+.search-body .poemname {
+   margin: 10px 0 10px;
+}
+
+.animate-container {
+   list-style: none;
+   padding-left: 10px;
+}
+
+.animate-repeat {
+   box-sizing: border-box;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+   transition: all linear 0.5s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+   opacity: 0;
+   max-height: 0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+   opacity: 1;
+   max-height: 30px;
 }

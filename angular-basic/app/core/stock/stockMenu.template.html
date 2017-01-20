@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default my-fix-top">
+<nav class="navbar navbar-default stock-fix-top">
    <div class="container">
       <div class="navbar-header">
          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -17,10 +17,11 @@
                <ul class="dropdown-menu">
                   <li class="dropdown-header">板块</li>
                   <li>
-                     <a href="#notionHot">概念区间</a>
+                     <!-- 这里使用href的# 锚定的话，url改变导致页面刷新. 组件会重新加载，导致锚定位置错误. -->
+                     <a onClick='goto("notionHot")'>概念区间</a>
                   </li>
                   <li>
-                     <a href="#industryHot">行业区间</a>
+                     <a onClick='goto("industryHot")'>行业区间</a>
                   </li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">其他</li>
@@ -39,7 +40,7 @@
                <ul class="dropdown-menu">
                   <li class="dropdown-header">关系</li>
                   <li>
-                     <a href="#correlation">相关性分析</a>
+                     <a onClick='goto("correlation")'>相关性分析</a>
                   </li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">其他</li>

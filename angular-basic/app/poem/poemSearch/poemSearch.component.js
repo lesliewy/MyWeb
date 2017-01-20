@@ -1,6 +1,6 @@
 'use strict';
 
-define(['angular'], function(angular) {
+define(['angular', 'angular-sanitize', 'angular-animate'], function(angular) {
    angular.
    module('poem').
    component('poemSearchCompon', {
@@ -21,12 +21,43 @@ define(['angular'], function(angular) {
                var response = result.response;
                self.numFound = response.numFound;
                self.docs = response.docs;
+
+               // 展开与折叠
+               self.poembriefclasses = new Array(self.numFound);
+               self.poemallclasses = new Array(self.numFound);
+               self.showbtns = new Array(self.numFound);
+               for (var i = 0; i < self.numFound; i++) {
+                  self.poembriefclasses[i] = "showinline";
+                  self.poemallclasses[i] = "hidden";
+                  self.showbtns[i] = "...显示全部";
+               }
             });
             this.orderProp = "author_name";
          };
 
+         // 展开与折叠
+         this.foldtoggle = function(index) {
+            console.log("index: " + index);
+            if (this.showbtns[index] == '...显示全部') {
+               this.poembriefclasses[index] = 'hidden';
+               this.poemallclasses[index] = 'showinline';
+               this.showbtns[index] = '收起';
+            } else {
+               this.poembriefclasses[index] = 'showinline';
+               this.poemallclasses[index] = 'hidden';
+               this.showbtns[index] = '...显示全部';
+            }
+         }
+
          // 选中菜单
-         self.searchActived = "active";
+         this.searchActived = "active";
+
+         // 初始时执行一次查询.
+         this.type = "author_name";
+         this.searchContent = "屈原";
+         this.query();
+
+
       }]
    });
 })

@@ -42,10 +42,11 @@ router.get('/query', function(req, res, next) {
 
 /*
    随机生成一组id, 然后根据id查询. 
+   有可能会重复.
    q: (id:0 OR id:171 OR id:430 OR id:7 OR id:91 OR id:179 OR id:152 OR id:39 OR id:255 OR id:107 OR id:208)
 */
 router.get('/randquery', function(req, res, next) {
-   var ids = generateRand(1, 450, 10);
+   var ids = generateRand(1, 281205, 10);
    var q = buildQuery(ids);
    console.log("q: " + q);
 

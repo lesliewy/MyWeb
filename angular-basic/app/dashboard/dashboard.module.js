@@ -1,4 +1,4 @@
 'use strict';
 define(['angular'], function(angular) {
-   angular.module('dashboard', []);
+   angular.module('dashboard', ['core.dashboard.module']);
 })

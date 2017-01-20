@@ -1,5 +1,10 @@
 <div>
+   <stonestory-menu></stonestory-menu>
 </div>
-<div>
-   <iframe src="http://127.0.0.1:3838/stoneStoryWordCloud/" width="100%" height=888 scrolling="no"></iframe>
+<div class="stonestory-body">
+   <!-- 使用position:fixed固定menu导致锚定不到准确位置. 这里添加一个隐藏元素，高度为menu的高度, 来解决这个问题. -->
+   <a class="hiddenanchor1" id="hiddenanchor"></a>
+   <div id="wordcloud">
+      <iframe src="http://123.57.50.82:3838/stoneStoryWordCloud/" width="100%" height=888 scrolling="no"></iframe>
+   </div>
 </div>

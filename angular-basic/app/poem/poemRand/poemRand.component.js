@@ -1,6 +1,6 @@
 'use strict';
 
-define(['angular', 'angular-sanitize'], function(angular) {
+define(['angular'], function(angular) {
    angular.
    module('poem').
    component('poemRandCompon', {
@@ -8,10 +8,16 @@ define(['angular', 'angular-sanitize'], function(angular) {
       controller: ['PoemData', 'SolrRandQuery', '$scope', function PoemRandController(PoemData, SolrRandQuery, $scope) {
          var self = this;
          console.log("this is poemRandCompon");
+         /*
          SolrRandQuery.get({}, function(result) {
             var response = result.response;
             self.docs = response.docs;
          });
+         */
+
+         self.toggleshow = function(index){
+            
+         }
 
          // 选中菜单
          self.randActived = "active";

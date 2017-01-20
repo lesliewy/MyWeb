@@ -2,15 +2,21 @@
    <poem-menu></poem-menu>
    <div id="randPoem" class='poem-body'>
       <ul id="stage">
+         <!-- 使用ng-bind-html, 必须引入 ngSanitize. poem.module(['ngSanitize'])-->
+         <!--
          <li ng-repeat="doc in $ctrl.docs">
             <a href="/poem{{doc.poem_url}}">{{ doc.poem_name}}</a>
-            <!-- 必须引入 ngSanitize. poem.module(['ngSanitize'])-->
             <p ng-bind-html="doc.poem_content"></p>
          </li>
+         -->
+
+         <!-- 这里使用动态创建li, 因为使用angular方式没想到怎么显示部分/全部的方法. -->
       </ul>
    </div>
 </div>
 <script>
-// 滚动条至底刷新.
-refreshRandPoems();
+// 滚动条至底刷新. 这里必须用jquery, 因为document不在该页面.
+$(document).ready(function() {
+   refreshRandPoems();
+});
 </script>

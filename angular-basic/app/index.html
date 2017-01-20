@@ -11,45 +11,44 @@
    <!-- font-awesome 需要字体文件，放在fonts目录 -->
    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
 </head>
-
-<body>
-   <div class="page-container">
-      <div>
-         <div class="sidebar-menu">
-            <!--上方蓝色底logo部分-->
-            <header class="logo1">
-               <!-- fa 在font-awesome.css里-->
-               <a href="/" class="sidebar-icon">
-                  <span class="fa fa-bars"></span>
-               </a>
-            </header>
+<!-- 样式设置高度撑满整个页面，那么必须从最外层一层一层设置高度100% -->
+<body class="page-container">
+   <div>
+      <div class="sidebar-menu">
+         <!--上方蓝色底logo部分-->
+         <header class="logo1">
+            <!-- fa 在font-awesome.css里-->
+            <a href="/" class="sidebar-icon">
+               <span class="fa fa-bars"></span>
+            </a>
+         </header>
+         <div>
             <div>
-               <div>
-                  <ul id="menu">
-                     <li>
-                        <a href="/dashboard">
-                           <i class="fa fa-tachometer"></i>
-                           <span>Dashboard</span>
-                        </a>
-                     </li>
-                     <li id="menu-academico">
-                        <a href="/stock">
-                           <i class="fa fa-money fa-navicon"></i>
-                           <span>股票</span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="/stoneStory">
-                           <i class="fa fa-university"></i>
-                           <span>红楼梦</span>
-                        </a>
-                     </li>
-                     <li id="menu-academico">
-                        <a href="/poemRand">
-                           <i class="fa fa-building"></i>
-                           <span>诗词</span>
-                        </a>
-                        <!--
+               <ul id="menu">
+                  <li>
+                     <a href="/dashboard">
+                        <i class="fa fa-tachometer"></i>
+                        <span>概览</span>
+                     </a>
+                  </li>
+                  <li id="menu-academico">
+                     <a href="/stock">
+                        <i class="fa fa-money fa-navicon"></i>
+                        <span>股票</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="/stoneStory">
+                        <i class="fa fa-university"></i>
+                        <span>红楼梦</span>
+                     </a>
+                  </li>
+                  <li id="menu-academico">
+                     <a href="/poemRand">
+                        <i class="fa fa-building"></i>
+                        <span>诗词</span>
+                     </a>
+                     <!--
                         <ul id="menu-academico-sub">
                            <li id="menu-academico-avaliacoes">
                               <a href="/poemSearch">诗词检索</a>
@@ -62,33 +61,32 @@
                            </li>
                         </ul>
                         -->
-                     </li>
-                     <li id="menu-academico">
-                        <a>
-                           <i class="fa fa-list-ul" aria-hidden="true"></i>
-                           <span>杂项</span>
-                           <span class="fa fa-angle-right" style="float: right"></span>
-                        </a>
-                        <ul id="menu-academico-sub">
-                           <li id="menu-academico-avaliacoes">
-                              <a href="icons.html">Icons</a>
-                           </li>
-                           <li id="menu-academico-avaliacoes">
-                              <a href="typography.html">Typography</a>
-                           </li>
-                           <li id="menu-academico-avaliacoes">
-                              <a href="faq.html">Faq</a>
-                           </li>
-                        </ul>
-                     </li>
-                  </ul>
-               </div>
+                  </li>
+                  <li id="menu-academico">
+                     <a>
+                        <i class="fa fa-list-ul" aria-hidden="true"></i>
+                        <span>杂项</span>
+                        <span class="fa fa-angle-right" style="float: right"></span>
+                     </a>
+                     <ul id="menu-academico-sub">
+                        <li id="menu-academico-avaliacoes">
+                           <a href="icons.html">Icons</a>
+                        </li>
+                        <li id="menu-academico-avaliacoes">
+                           <a href="typography.html">Typography</a>
+                        </li>
+                        <li id="menu-academico-avaliacoes">
+                           <a href="faq.html">Faq</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
             </div>
          </div>
       </div>
-      <div class="mybody">
-         <ng-view></ng-view>
-      </div>
+   </div>
+   <div class="mybody">
+      <ng-view></ng-view>
    </div>
    <script type='text/javascript' src='bower_components/requirejs/require.js' data-main='scripts/main.js'></script>
 </body>

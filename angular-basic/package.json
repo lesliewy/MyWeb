@@ -25,6 +25,9 @@
     "test-single-run": "karma start test/karma.conf.js --single-run"
   },
   "dependencies": {
+    "mongoose": "^4.7.7",
+    "mysql": "^2.12.0",
+    "pomelo-logger": "^0.1.7",
     "solr-client": "^0.6.0"
   }
 }
