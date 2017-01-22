@@ -1,6 +1,6 @@
 'use strict';
 
-define(['angular', 'angular-sanitize', 'angular-animate'], function(angular) {
+define(['angular', 'angular-sanitize', 'angular-animate', '../poem.module'], function(angular) {
    angular.
    module('poem').
    component('poemSearchCompon', {

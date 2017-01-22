@@ -10,7 +10,7 @@
 - **2016-12-12**: 添加requirejs.
 - **2016-12-29**: 取消之前的byType(controller/, services/, filters/, directives/, ...), 改用byFeature(stock/, poem/, stoneStory/, ...)
 - **2017-01-04**: 开始搭建阿里云服务器, 安装node,mysql,mongodb,solr等软件. 申请域名.
-
+- **2017-01-20**: 云服务器搭建完成。网站备案审核中，只能通过IP访问.
 
 
 ## Performance Improvements

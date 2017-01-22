@@ -10,6 +10,7 @@ define([
    '../core/stock/stock.service',
    '../core/stock/stock.directive',
    '../core/stock/stockMenu.directive',
+   '../core/stonestory/core.stonestory.module',
    '../core/stonestory/stonestoryMenu.directive',
    '../dashboard/dashboard.module',
    '../core/poem/core.poem.module',

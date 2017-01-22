@@ -2,7 +2,7 @@
 
 function StockAnalyseController($scope, $element, $attrs) {};
 
-define(['angular'], function(angular) {
+define(['angular', './stock.module'], function(angular) {
    angular.
    module('stock').
       // component名字必须和element关联. 这里是ngroute中指定的关联. stock-compon

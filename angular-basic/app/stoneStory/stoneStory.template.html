@@ -4,7 +4,71 @@
 <div class="stonestory-body">
    <!-- 使用position:fixed固定menu导致锚定不到准确位置. 这里添加一个隐藏元素，高度为menu的高度, 来解决这个问题. -->
    <a class="hiddenanchor1" id="hiddenanchor"></a>
-   <div id="wordcloud">
-      <iframe src="http://123.57.50.82:3838/stoneStoryWordCloud/" width="100%" height=888 scrolling="no"></iframe>
+   <div id="wordcloud" width:100%; height:888px; position:relative;>
+      <div id="progress" class="progress" style="margin-left: 400px; margin-top: 200px; width: 30%">
+         <div id="progressStrip" class="progress-bar progress-bar-success progress-bar-striped active" style="width: 0%; ">
+            <div id="progressValue" class="progress-value"></div>
+         </div>
+      </div>
+      <iframe style="display:none" id="wciframe" name="wciframe" src="http://123.57.50.82:3838/stoneStoryWordCloud/" width="100%" height="666px" scrolling="no"></iframe>
    </div>
 </div>
+
+<style>
+/*.progress {
+   text-align: center;
+   line-height: 888px;
+   height: 20px;
+}
+
+.progress-inner {
+   width: 1%;
+   background: #d43f3a;
+   height: 100%;
+}
+
+.progress {
+   height: 25px;
+   background: #262626;
+   padding: 5px;
+   overflow: visible;
+   border-radius: 20px;
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #7992a8;
+   margin-top: 50px;
+}
+.progress .progress-bar {
+   border-radius: 20px;
+   position: relative;
+   animation: animate-positive 2s;
+}
+
+.progress .progress-value {
+   display: block;
+   padding: 3px 7px;
+   font-size: 13px;
+   color: #fff;
+   border-radius: 4px;
+   background: #191919;
+   border: 1px solid #000;
+   position: absolute;
+   top: -40px;
+   right: -10px;
+}
+
+/*.progress .progress-value:after {
+   content: "";
+   border-top: 10px solid #191919;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   position: absolute;
+   bottom: -6px;
+   left: 26%;
+}*/
+</style>
+<script>
+$(document).ready(function() {
+   console.log("this is document ready");
+   loadProgress();
+});
+</script>

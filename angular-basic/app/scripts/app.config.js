@@ -12,12 +12,23 @@ define(['angular', 'require', 'angular-route', 'myApp'], function(angular, requi
       $locationProvider.html5Mode(true);
    }]);
 */
-
-   app.controller("aController", function($scope, $route, $routeParams) {
-      $scope.hello = "hello,a!";
-   }).controller("AnalyseCtrl", function($scope, $routeParams) {
-      $scope.hello = "hello, stock.";
+   // 创建拦截器
+   app.factory('Http404Interceptor', function($q) {
+      return {
+         responseError: function(response) {
+            if (response.status == 404) {
+               location.href = '/error';
+            }
+            return $q.reject(response);
+         }
+      }
    });
+
+   //    配置拦截器给app
+   app.config(function($httpProvider) {
+      $httpProvider.interceptors.push('Http404Interceptor');
+   });
+
    app.config(['$routeProvider', '$controllerProvider', '$locationProvider',
       function($routeProvider, $controllerProvider, $locationProvider) {
          console.log("this is app.config in router.");
@@ -66,7 +77,7 @@ define(['angular', 'require', 'angular-route', 'myApp'], function(angular, requi
             template: '<poem-rand-compon></poem-rand-compon>'
          }).
          otherwise({
-            redirectTo: '/'
+            redirectTo: '/dashboard'
          });
       }
    ]);

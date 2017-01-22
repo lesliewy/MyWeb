@@ -1,4 +1,4 @@
-define(['angular'], function(angular) {
+define(['angular', './core.stock.module'], function(angular) {
    angular.module('core.stock.module').directive('stockMenu', function() {
       return {
          restrict: 'E',

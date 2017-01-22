@@ -42,6 +42,12 @@
          -->
       </row>
       <row>
+         <p class="search-num">
+            <span>共找到{{results.length}}首.</span>
+            <span ng-show="$ctrl.numFound > 1000">只显示1000首</span>
+         </p>
+      </row>
+      <row>
          <ul class="animate-container">
             <!-- 按标题搜索伐檀如果不加 ”“, 会把伐柯也搜索出来.还不知道怎么在solr-client中添加""
                as results 必须放最后.

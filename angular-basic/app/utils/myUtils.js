@@ -14,7 +14,7 @@ function refreshRandPoems() {
    /* 监听滚动事件, 滚动条每滚动下就会执行 */
    $(window).scroll(function() {
       console.log("this is $().scroll.");
-      // 当滚动到最底部以上100像素时， 加载新内容  scrollTop: 滚动条顶部已滚动的长度.
+      // 当滚动到最底部以上100像素时， 加载新内容  window.scrollTop: 窗口顶部已滚动的长度，不可视区域.
       if ($(document).height() - $(window).scrollTop() - $(window).height() < 100) {
          // 防止重复请求. ajax异步返回后重新修改为false.
          if (window.loaded) {
@@ -138,3 +138,48 @@ function goto(id) {
    document.getElementById(id).scrollIntoView(true);
 }
 
+/**
+ * iframe 正在加载时的滚动条.
+ */
+function loadProgress() {
+   var loaded = false;
+   var progressStrip = document.getElementById('progressStrip');
+   var progress = 1;
+   var random = function(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+   };
+   var onprogress = function() {
+      // 随机时间  
+      var timeout = random(100, 200);
+
+      setTimeout(function() {
+         // 如果页面加载完毕，则直接进度到 100%  
+         if (loaded) {
+            progressStrip.style.width = '100%';
+            $("#progressValue").text('100%');
+            return;
+         }
+
+         // 随机进度
+         progress += random(1, 5);
+
+         // 随机进度不能超过 98%，以免页面还没加载完毕，进度已经 100% 了  
+         if (progress > 98) {
+            progress = 98;
+         }
+
+         progressStrip.style.width = progress + '%';
+         $("#progressValue").text(progress + '%');
+         onprogress();
+      }, timeout);
+   };
+
+   // 开始跑进度  
+   onprogress();
+
+   $("#wciframe").on("load", function() {
+      loaded = true;
+      $("#progress").hide();
+      $("#wciframe").show();
+   });
+}

@@ -2,7 +2,7 @@
 
 function StoneStoryController($scope, $element, $attrs) {};
 
-define(['angular'], function(angular) {
+define(['angular', './stoneStory.module'], function(angular) {
    angular.
    module('stoneStory').
    component('stoneStoryCompon', {

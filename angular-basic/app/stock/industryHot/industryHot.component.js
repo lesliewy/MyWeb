@@ -1,5 +1,5 @@
 'use strict';
-define(['angular'], function(angular) {
+define(['angular', '../stock.module'], function(angular) {
    angular.
    module('stock').
       // component名字必须和ngroute中指定的关联. stock-compon

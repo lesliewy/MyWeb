@@ -1,4 +1,4 @@
-define(['angular'], function(angular) {
+define(['angular', './core.stock.module'], function(angular) {
    angular.module('core.stock.module')
       .factory('StockAnalyse', function($http) {
          console.log("this is core.stock.module.factory()")

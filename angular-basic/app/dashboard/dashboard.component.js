@@ -1,5 +1,5 @@
 'use strict';
-define(['angular'], function(angular) {
+define(['angular', './dashboard.module'], function(angular) {
    angular.
    module('dashboard').
    component('dashboardCompon', {

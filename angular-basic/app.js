@@ -50,6 +50,14 @@ app.use('/solr', solr);
 
 app.use('/dashboard', dashboard);
 
+/**
+ * 直接访问非根域名的url，绕过了首页angular等的加载。 返回首页加载相关js, 会重新使用angular路由. 
+ * 直接访问: http://127.0.0.1/poemRand 会报错.
+ */
+app.get('*', function(req, res){
+    res.sendFile('app/index.html', options);
+});
+
 // catch 404 and forward to error handler  放在路由的最后
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

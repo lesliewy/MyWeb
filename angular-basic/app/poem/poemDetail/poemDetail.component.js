@@ -1,6 +1,6 @@
 'use strict';
 
-define(['angular'], function(angular) {
+define(['angular', '../poem.module'], function(angular) {
    angular.
    module('poem').
    component('poemDetailCompon', {

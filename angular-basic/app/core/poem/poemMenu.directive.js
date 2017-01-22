@@ -4,7 +4,7 @@
    这里通过changeDate事件手动的设置到scope的ng-model里面. 
 */
 
-define(['angular'], function(angular) {
+define(['angular', './core.poem.module'], function(angular) {
    angular.module('core.poem.module').directive('poemMenu', function() {
       return {
          restrict: 'E',

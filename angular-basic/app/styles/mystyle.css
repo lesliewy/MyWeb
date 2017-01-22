@@ -37,7 +37,23 @@ iframe {
    width: 1160px;
    overflow-x: hidden;
 }
+/**  progress bar begin **/
+.progress-bar.active {
+   animation: reverse progress-bar-stripes 0.4s linear infinite, animate-positive 2s;
+}
 
+@-webkit-keyframes animate-positive {
+   0% {
+      width: 0;
+   }
+}
+
+@keyframes animate-positive {
+   0% {
+      width: 0;
+   }
+}
+/**  progress bar end **/
 
 /**
  * 
@@ -182,32 +198,43 @@ iframe {
    opacity: 1;
 }
 
+
 /** 
  * 
  * Dashboard
  *
  **/
-.region-box{
+
+.region-box {
    border: 1px solid #ccd6e0;
    padding: 0;
 }
-.region-titile-bar{
+
+.region-title{
+   font-size: 20px;
+}
+.region-titile-bar {
    border-bottom: 1px solid #ccd6e0;
    background-color: #f8f9fb;
    height: 38px;
 }
-.region-content{
+
+.region-content {
    padding: 28px 24px;
-   height: 202px; /** todo: 先直接写死了.**/
+   height: 202px;
+   /** todo: 先直接写死了.**/
 }
 
+
 /** 去掉默认的ul**/
-.region-content ul{
+
+.region-content ul {
    list-style: none;
    padding: 0;
    margin: 0;
 }
-.region-content ul li{
+
+.region-content ul li {
    width: 160px;
    height: 24px;
    margin-bottom: 16px;
@@ -217,17 +244,19 @@ iframe {
    padding-left: 16px;
    line-height: 24px;
 }
-.relation-line{
+
+.relation-line {
    width: 64px;
    height: 126px;
    margin: 10px 6px;
    background: url(../images/ecs.png) no-repeat 0 0;
 }
-.region-content-text{
+
+.region-content-text {
    float: left;
 }
 
-.region-content-data{
+.region-content-data {
    float: right;
    color: green;
 }
@@ -239,6 +268,7 @@ iframe {
    padding-top: 10px;
    padding-left: 10px;
    background: url(../images/cardboard_flat.png);
+   bottom: 0;
 }
 
 .stock-body {
@@ -273,12 +303,14 @@ iframe {
 
 .poem {
    background: url(../images/school.png);
-   min-height: 1100px; /* 使背景至少填充整个屏幕. */
+   min-height: 1100px;
+   /* 使背景至少填充整个屏幕. */
 }
 
 .poem-body {
    margin-top: 50px;
    padding-top: 10px;
+   width: 95%;
 }
 
 .poem-fix-top {
@@ -313,6 +345,8 @@ iframe {
    cursor: default;
    color: #000000;
 }
+
+
 /*
 .search-body {
    position: fixed;
@@ -322,8 +356,20 @@ iframe {
    left: 200px;
 }
 */
+
 .search-body .poemname {
    margin: 10px 0 10px;
+}
+
+.search-num {
+   color: #337ab7;
+   text-decoration: none;
+   font-size: 12px;
+   text-indent: 10px;
+}
+
+.search-num span:nth-child(2) {
+   color: red;
 }
 
 .animate-container {

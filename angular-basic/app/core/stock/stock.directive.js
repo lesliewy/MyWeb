@@ -4,7 +4,7 @@
    这里通过changeDate事件手动的设置到scope的ng-model里面. 
 */
 
-define(['angular', 'jquery', 'bootstrap-datepicker'], function(angular, $, datepick) {
+define(['angular', 'jquery', 'bootstrap-datepicker', './core.stock.module'], function(angular, $, datepick) {
    angular.module('core.stock.module').directive('mydatepicker', function() {
       return {
          restrict: 'EA',
