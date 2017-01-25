@@ -1,0 +1,35 @@
+<div>
+   <h3 id="callimitupdown">计算涨跌停比例</h3>
+   <p>
+      <input id="type1" type="radio" checked="true" ng-click="$ctrl.radioControl(this)" />
+      <label>计算涨跌停</label>
+      <input id="type2" type="radio" ng-click="$ctrl.radioControl(this)" />
+      <label>计算比例</label>
+   </p>
+<!-- Single button -->
+  <!--  <p>
+      <input id="proption1" type="radio" checked="true" ng-click="$ctrl.radioControl(this)" />
+      <label>10%</label>
+      <input id="proption2" type="radio" ng-click="$ctrl.radioControl(this)" />
+      <label>5%</label>
+   </p> -->
+   <p>
+      <input id="updown1" type="radio" checked="true" ng-click="$ctrl.radioControl(this)" />
+      <label>涨停</label>
+      <input id="updown2" type="radio" ng-click="$ctrl.radioControl(this)" />
+      <label>跌停</label>
+   </p>
+   <p>
+      <label>股价: </label>
+      <input id="price" type="number" />
+      <label>涨跌停个数:</label>
+      <input id="numUpDown" type="number" />
+   </p>
+   <p>
+      <input type="button" value="计算" ng-click="$ctrl.calPrice();" />
+   </p>
+   <p>
+      <div id="result">
+      </div>
+   </p>
+</div>
