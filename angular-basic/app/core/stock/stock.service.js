@@ -1,4 +1,4 @@
-define(['angular', './core.stock.module'], function(angular) {
+define(['angular', './core.stock.module', '../../utils/globalPara'], function(angular) {
    angular.module('core.stock.module')
       .factory('StockAnalyse', function($http) {
          console.log("this is core.stock.module.factory()")
@@ -15,6 +15,7 @@ define(['angular', './core.stock.module'], function(angular) {
             var result = "leslie";
             var url = GLOBAL.tomcatAddr;  // 前面必须加http， 否则报404.
             var allUrl = url + '/stanalyse/analyse/' + type + '?callback=JSON_CALLBACK&from=' + from + '&to=' + to;
+            console.log("allUrl: " + allUrl);
             var encodeUrl = encodeURI(allUrl);
             return $http.jsonp(encodeUrl);
             // 外面获取不到 success() 中返回的data

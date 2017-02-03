@@ -130,6 +130,11 @@ bower install angular-bootstrap --save
   n stable: 升级到最新稳定版.
   n v0.10.26: 升级到指定版本.
 
+# Tomcat
+http://127.0.0.1:8080/stanalyse/analyse/industryHotStocks?from=2016-01-01&to=2016-05-01&callback=a
+http://123.57.50.82:8080/stanalyse/analyse/industryHotStocks?from=2016-01-01&to=2016-05-01&callback=a
+
+http://123.57.50.82:3838/
 
 
 # TODO
