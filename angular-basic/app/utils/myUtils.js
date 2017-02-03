@@ -182,4 +182,9 @@ function loadProgress() {
       $("#progress").hide();
       $("#wciframe").show();
    });
+   $("#poemanalyseiframe").on("load", function() {
+      loaded = true;
+      $("#progress").hide();
+      $("#poemanalyseiframe").show();
+   });
 }

@@ -1,12 +1,15 @@
 'use strict';
-
-function StoneStoryController($scope, $element, $attrs) {};
-
-define(['angular', './stoneStory.module'], function(angular) {
+define(['angular', './stoneStory.module', '../utils/globalPara'], function(angular) {
    angular.
    module('stoneStory').
    component('stoneStoryCompon', {
       templateUrl: 'stoneStory/stoneStory.template.html',
-      controller: StoneStoryController
+      controller: ['$sce', function StoneStoryController($sce){
+         this.trustedSrc = function(){
+            var shinyUrl = GLOBAL.shinyAddr + "/stoneStoryWordCloud/";
+            // 这里的console.log 会调用多次，不明白为什么.
+            return $sce.trustAsResourceUrl(shinyUrl);
+         };
+      }]
    });
 })

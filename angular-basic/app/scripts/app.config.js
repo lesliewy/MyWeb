@@ -75,6 +75,8 @@ define(['angular', 'require', 'angular-route', 'myApp'], function(angular, requi
             template: '<poem-detail-compon></poem-detail-compon>'
          }).when('/poemRand', {
             template: '<poem-rand-compon></poem-rand-compon>'
+         }).when('/poemAnalyse', {
+            template: '<poem-analyse-compon></poem-analyse-compon>'
          }).
          otherwise({
             redirectTo: '/dashboard'

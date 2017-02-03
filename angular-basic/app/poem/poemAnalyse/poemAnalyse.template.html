@@ -1,0 +1,14 @@
+<poem-menu></poem-menu>
+<div id="analyse">
+   <div id="progress" class="progress" style="margin-left: 400px; margin-top: 200px; width: 30%">
+      <div id="progressStrip" class="progress-bar progress-bar-success progress-bar-striped active" style="width: 0%; ">
+         <div id="progressValue" class="progress-value"></div>
+      </div>
+   </div>
+   <iframe style="display:none; margin-top: 50px;" id="poemanalyseiframe" ng-src="{{$ctrl.trustedSrc();}}" width="100%" height=1200 scrolling="no"></iframe>
+</div>
+<script>
+$(document).ready(function() {
+   loadProgress();
+});
+</script>

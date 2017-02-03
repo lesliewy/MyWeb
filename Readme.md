@@ -142,3 +142,7 @@ bower install angular-bootstrap --save
 http://tnc.org.cn/
 https://segmentfault.com/q/1010000000601024
 http://www.cnblogs.com/e50000/p/5856064.html
+* redis 缓存.  先不考虑， dashboard上的诗词数量可以写个简单的map存放.
+* mysql 异步复制.
+* 百度api  图片中获文字.
+* 防止按钮重复点击: 包括诗词查询、股票查询.

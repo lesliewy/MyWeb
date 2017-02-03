@@ -24,6 +24,9 @@ define([
    '../stock/stock.component',
    '../stock/notionHot/notionHot.component',
    '../stock/industryHot/industryHot.component',
+   '../stock/notionHotStocks/notionHotStocks.component',
+   '../stock/industryHotStocks/industryHotStocks.component',
+   '../stock/calLimit/calLimit.component',
    '../stoneStory/stoneStory.module',
    '../stoneStory/stoneStory.component',
    '../poem/poem.module',
@@ -31,7 +34,9 @@ define([
    '../poem/poemSearch/poemSearch.component',
    '../poem/poemDetail/poemDetail.component',
    '../poem/poemRand/poemRand.component',
-   '../utils/myUtils'
+   '../poem/poemAnalyse/poemAnalyse.component',
+   '../utils/myUtils',
+   '../utils/globalPara'
    /*,
    'allControllers',
    'allServices',
