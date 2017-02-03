@@ -24,6 +24,15 @@
                      <a onClick='goto("industryHot")'>行业区间</a>
                   </li>
                   <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">个股</li>
+                  <li>
+                     <!-- 这里使用href的# 锚定的话，url改变导致页面刷新. 组件会重新加载，导致锚定位置错误. -->
+                     <a onClick='goto("notionHotStocks")'>概念个股区间</a>
+                  </li>
+                  <li>
+                     <a onClick='goto("industryHotStocks")'>行业个股区间</a>
+                  </li>
+                  <li role="separator" class="divider"></li>
                   <li class="dropdown-header">其他</li>
                   <li>
                      <a href="#">a</a>
@@ -49,6 +58,16 @@
                   </li>
                   <li>
                      <a href="#">b</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工具
+                  <span class="caret"></span>
+               </a>
+               <ul class="dropdown-menu">
+                  <li>
+                     <a onClick='goto("callimitupdown")'>计算涨跌停比例</a>
                   </li>
                </ul>
             </li>

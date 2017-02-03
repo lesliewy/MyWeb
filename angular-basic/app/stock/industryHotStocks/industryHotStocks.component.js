@@ -3,12 +3,10 @@ define(['angular', '../stock.module'], function(angular) {
    angular.
    module('stock').
       // component名字必须和ngroute中指定的关联. stock-compon
-   component('industryHotCompon', {
-      templateUrl: 'stock/industryHot/industryHot.template.html',
+   component('industryHotStocksCompon', {
+      templateUrl: 'stock/industryHotStocks/industryHotStocks.template.html',
       controller: ['StockAnalyse',
-         function industryHotAnalyseController(StockAnalyse) {
-            /*this.phones = Phone.query();
-            this.orderProp = 'age';*/
+         function industryHotStocksAnalyseController(StockAnalyse) {
             var self = this;
             this.query = function(type) {
                var dtBegin = null;
@@ -19,14 +17,14 @@ define(['angular', '../stock.module'], function(angular) {
                   dtBegin = "2017-01-03 15:00:00";
                   dtEnd = "2017-01-15 15:00:00";
                } else {
-                  if (type == "notionHot") {
-                     dtBegin = this.conditions.notionHotBegin;
-                     dtEnd = this.conditions.notionHotEnd;
-                  } else if (type == "industryHot") {
-                     dtBegin = this.conditions.industryHotBegin;
-                     dtEnd = this.conditions.industryHotEnd;
+                  if (type == "notionHotStocks") {
+                     dtBegin = this.conditions.notionHotStocksBegin;
+                     dtEnd = this.conditions.notionHotStocksEnd;
+                  } else if (type == "industryHotStocks") {
+                     dtBegin = this.conditions.industryHotStocksBegin;
+                     dtEnd = this.conditions.industryHotStocksEnd;
                   } else {
-                     console.log(type + " error, must be notionHot or industryHot");
+                     console.log(type + " error, must be notionHotStocks or industryHotStocks");
                      return;
                   }
                }
@@ -41,20 +39,20 @@ define(['angular', '../stock.module'], function(angular) {
                   var pageName = null;
                   var pageListName = null;
                   /** end */
-                  if (type == "notionHot") {
+                  if (type == "notionHotStocks") {
                      name = "notionName";
-                     all = data.notionHot;
-                     self.notionHeadNames = { "num": "序号", "notionName": "概念名称", "totalChange": "总涨跌幅", "corpsNum": "公司家数" };
-                     dataName = "notionHotItems";
-                     pageName = "notionHotPage";
-                     pageListName = "notionHotPageList";
-                  } else if (type == "industryHot") {
+                     all = data.notionHotStocks;
+                     self.notionHeadNames = { "num": "序号", "stockCode": "股票代码", "stockName": "股票名称", "totalChange": "总涨跌幅", "notionName": "概念名称"};
+                     dataName = "notionHotStocksItems";
+                     pageName = "notionHotStocksPage";
+                     pageListName = "notionHotStocksPageList";
+                  } else if (type == "industryHotStocks") {
                      name = "industryName";
-                     all = data.industryHot;
-                     self.industryHeadNames = { "num": "序号", "industryName": "行业名称", "totalChange": "总涨跌幅", "corpsNum": "公司家数" };
-                     dataName = "industryHotItems";
-                     pageName = "industryHotPage";
-                     pageListName = "industryHotPageList";
+                     all = data.industryHotStocks;
+                     self.industryHeadNames = { "num": "序号", "stockCode": "股票代码", "stockName": "股票名称", "totalChange": "总涨跌幅", "industryName": "行业名称"};
+                     dataName = "industryHotStocksItems";
+                     pageName = "industryHotStocksPage";
+                     pageListName = "industryHotStocksPageList";
                   }
                   var records = all.split('\n');
                   /**
@@ -72,9 +70,12 @@ define(['angular', '../stock.module'], function(angular) {
 
                      var fields = record.split(',');
                      // num notionName等必须加"",  而且{}内部必须使用"", 外面可以用'', 否则parse报错.
-                     var jsonRecord = "{" + "\"num\":" + fields[4] + "," + "\"" + name + "\":" + "\"" + fields[5] +
-                        "\"" + "," + "\"totalChange\":" + fields[6] + "," +
-                        "\"corpsNum\":" + fields[7] + "}";
+                     var jsonRecord = "{" + 
+                      "\"num\":" + fields[1] + "," + 
+                      "\"stockCode\":" + "\"" + fields[2] + "\"" + "," +
+                      "\"stockName\":" + "\"" + fields[3] + "\"" + "," +
+                      "\"totalChange\":" + fields[4] + "," +
+                      "\"industryName\":" + "\"" + fields[5] + "\"" + "}";
                      // JSON.parse() 转为JSON对象.  反之用JSON.stringify(allJson)
                      allJson.push(JSON.parse(jsonRecord));
                   }
@@ -95,7 +96,7 @@ define(['angular', '../stock.module'], function(angular) {
             };
 
             // 打开页面时查询
-            this.query("industryHot");
+            this.query("industryHotStocks");
          }
       ]
    });

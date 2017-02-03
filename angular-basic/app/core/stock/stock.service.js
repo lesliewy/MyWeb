@@ -2,7 +2,7 @@ define(['angular', './core.stock.module'], function(angular) {
    angular.module('core.stock.module')
       .factory('StockAnalyse', function($http) {
          console.log("this is core.stock.module.factory()")
-         var url = 'http://123.57.50.82:8080';
+         var url = GLOBAL.tomcatAddr;
          var runRequest = function(from, to, type) {
             return $http({
                method: 'GET',
@@ -13,7 +13,7 @@ define(['angular', './core.stock.module'], function(angular) {
 
          var runJsonp = function(from, to, type) {
             var result = "leslie";
-            var url = "http://123.57.50.82:8080"; // 前面必须加http， 否则报404.
+            var url = GLOBAL.tomcatAddr;  // 前面必须加http， 否则报404.
             var allUrl = url + '/stanalyse/analyse/' + type + '?callback=JSON_CALLBACK&from=' + from + '&to=' + to;
             var encodeUrl = encodeURI(allUrl);
             return $http.jsonp(encodeUrl);

@@ -14,8 +14,8 @@ define(['angular', '../stock.module'], function(angular) {
 
                // 打开页面第一次查询.  此时没有this.conditions
                if (this.conditions == undefined || this.conditions == null) {
-                  dtBegin = "2016-01-03 15:00:00";
-                  dtEnd = "2016-01-15 15:00:00";
+                  dtBegin = "2017-01-03 15:00:00";
+                  dtEnd = "2017-01-15 15:00:00";
                } else {
                   if (type == "notionHot") {
                      dtBegin = this.conditions.notionHotBegin;

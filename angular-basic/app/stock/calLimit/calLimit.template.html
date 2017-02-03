@@ -1,22 +1,22 @@
 <div>
    <h3 id="callimitupdown">计算涨跌停比例</h3>
    <p>
-      <input id="type1" type="radio" checked="true" ng-click="$ctrl.radioControl(this)" />
+      <input id="type1" type="radio" name="type" checked="true" />
       <label>计算涨跌停</label>
-      <input id="type2" type="radio" ng-click="$ctrl.radioControl(this)" />
+      <input id="type2" type="radio" name="type"/>
       <label>计算比例</label>
    </p>
-<!-- Single button -->
-  <!--  <p>
-      <input id="proption1" type="radio" checked="true" ng-click="$ctrl.radioControl(this)" />
-      <label>10%</label>
-      <input id="proption2" type="radio" ng-click="$ctrl.radioControl(this)" />
-      <label>5%</label>
-   </p> -->
+   <!-- Single button -->
    <p>
-      <input id="updown1" type="radio" checked="true" ng-click="$ctrl.radioControl(this)" />
+      <input id="proption1" type="radio" name="proption" checked="true" />
+      <label>10%</label>
+      <input id="proption2" type="radio" name="proption" />
+      <label>5%</label>
+   </p>
+   <p>
+      <input id="updown1" type="radio" name="updown" checked="true" />
       <label>涨停</label>
-      <input id="updown2" type="radio" ng-click="$ctrl.radioControl(this)" />
+      <input id="updown2" type="radio" name="updown" />
       <label>跌停</label>
    </p>
    <p>

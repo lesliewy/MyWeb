@@ -11,7 +11,7 @@
 - **2016-12-29**: 取消之前的byType(controller/, services/, filters/, directives/, ...), 改用byFeature(stock/, poem/, stoneStory/, ...)
 - **2017-01-04**: 开始搭建阿里云服务器, 安装node,mysql,mongodb,solr等软件. 申请域名.
 - **2017-01-20**: 云服务器搭建完成。网站备案审核中，只能通过IP访问.
-
+- **2017-02-02**: 新增股票: 概念/行业个股区间涨跌幅查询, 计算涨跌停比例; 诗词: 诗人数、诗词数统计, 诗人的诗词数统计;
 
 ## Performance Improvements
 

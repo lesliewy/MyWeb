@@ -1,0 +1,50 @@
+<div>
+   <h3 id="industryHotStocks">行业个股区间涨跌幅查询</h3>
+   <section>
+      <div id="divMain">
+         <form name="industryHotStocksForm" ng-submit="$ctrl.query('industryHotStocks')">
+            <div class="input-group">
+               <input id="industryHotStocksBegin" name="industryHotStocksBegin" class="span3" size="16" type="text" value="2016-01-03 15:00:00" mydatepicker ng-model="$ctrl.conditions.industryHotStocksBegin" />
+               <span class="add-on">
+                  <i class="icon-calendar"></i>
+               </span>
+               <span>到</span>
+               <input name="industryHotStocksEnd" id="industryHotStocksEnd" size="16" type="text" value="2016-01-15 15:00:00" mydatepicker ng-model="$ctrl.conditions.industryHotStocksEnd" />
+               <span class="add-on">
+                  <i class="icon-calendar"></i>
+               </span>
+               <input type="submit" value="查询" />
+            </div>
+         </form>
+         <table class="table table-striped table-bordered table-hover table-condensed">
+            <tr>
+               <th ng-repeat="(x,y) in $ctrl.industryHeadNames">{{ y }}</th>
+            </tr>
+            <tr ng-repeat="x in $ctrl.industryHotStocksItems">
+               <td ng-bind="x.num"></td>
+               <td ng-bind="x.stockCode"></td>
+               <td ng-bind="x.stockName"></td>
+               <td ng-bind="x.totalChange"></td>
+               <td ng-bind="x.industryName"></td>
+            </tr>
+         </table>
+         <nav>
+            <ul class="pagination">
+               <li>
+                  <a ng-click="$ctrl.Previous()">
+                     <span>上一页</span>
+                  </a>
+               </li>
+               <li ng-repeat="industryHotStocksPage in $ctrl.industryHotStocksPageList" ng-class="{active: $ctrl.isActivePage(industryHotStocksPage)}">
+                  <a ng-click="$ctrl.selectPage(industryHotStocksPage)">{{ industryHotStocksPage }}</a>
+               </li>
+               <li>
+                  <a ng-click="$ctrl.Next()">
+                     <span>下一页</span>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </section>
+</div>
