@@ -22,6 +22,8 @@ define([
    '../dashboard/dashboard.component',
    '../stock/stock.module',
    '../stock/stock.component',
+   '../stock/stockTables/stockTables.component',
+   '../stock/stockCommon/stockCommon.component',
    '../stock/notionHot/notionHot.component',
    '../stock/industryHot/industryHot.component',
    '../stock/notionHotStocks/notionHotStocks.component',

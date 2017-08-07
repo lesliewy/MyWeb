@@ -29,6 +29,7 @@ router.get('/qstock', function(req, res, next) {
             // 不可以加""
             result.创业板 = rows1[i].NUM;
          }
+         // 这里的日期有问题， mysql中是2017-02-03 00:00:00, result中是 2017-02-02T16:00:00.000Z. 可能是时区设置问题.
          var rows2 = results[2];
          for (var i = 0; i < rows2.length; i++) {
             result.stockDate = rows2[i].STOCK_DATE;

@@ -6,26 +6,31 @@
       <!-- 使用position:fixed固定menu导致锚定不到准确位置. 这里添加一个隐藏元素，高度为menu的高度, 来解决这个问题. -->
       <!-- 参考: /home/leslie/MyProject/Html/test4.html 但是我这里不行，待后续研究. 暂时仍不用fixed menu -->
       <a class="hiddenanchor" id="hiddenanchor"></a>
-      <div>
-         <notion-hot-compon></notion-hot-compon>
-      </div>
-      <div>
-         <industry-hot-compon></industry-hot-compon>
-      </div>
-      <div>
-         <notion-hot-stocks-compon></notion-hot-stocks-compon>
-      </div>
-      <div>
-         <industry-hot-stocks-compon></industry-hot-stocks-compon>
-      </div>
+      <stock-tables-compon>
+         <div>
+            <stock-common-compon></stock-common-compon>
+         </div>
+         <div>
+            <notion-hot-compon></notion-hot-compon>
+         </div>
+         <div>
+            <industry-hot-compon></industry-hot-compon>
+         </div>
+         <div>
+            <notion-hot-stocks-compon></notion-hot-stocks-compon>
+         </div>
+         <div>
+            <industry-hot-stocks-compon></industry-hot-stocks-compon>
+         </div>
+      </stock-tables-compon>
       <div id="correlation">
-      <!--
+         <!--
          <iframe id="correlationiframe" ng-src="{{GLOBAL.shinyAddr}}/stocknotion/" width="100%" height=888 scrolling="no"></iframe>
-         -->
-         <iframe id="correlationiframe" ng-src="{{$ctrl.trustedSrc();}}" width="100%" height=888 scrolling="no"></iframe>
-      </div>
-      <div>
-         <cal-limit></cal-limit>
-      </div>
+      -->
+      <iframe id="correlationiframe" ng-src="{{$ctrl.trustedSrc();}}" width="100%" height=888 scrolling="no"></iframe>
    </div>
+   <div>
+      <cal-limit></cal-limit>
+   </div>
+</div>
 </div>

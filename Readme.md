@@ -137,6 +137,32 @@ http://123.57.50.82:8080/stanalyse/analyse/industryHotStocks?from=2016-01-01&to=
 http://123.57.50.82:3838/
 
 
+
+# 页面加载知识
+* https://developers.google.cn/web/fundamentals/performance/critical-rendering-path/
+
+* Chrome devTools中:  
+  DOM生成: ParseHtml 很快.
+  CSSDOM: Parse StyleSheet.  Recalculate
+
+  loading: Send Request + Receive Response + Receive Data + Parse Html + Parse StyleSheet
+  rendenring: Recalculate style + Layout
+  painting: Paint + Composite Layers 
+
+* DomContentLoaded 事件:  initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.    
+  包括js的加载及执行(非async):html解析时从上往下依次进行的,遇到非async的js必须加载及执行, 直至html构建完成触发DomContentLoaded.
+  而js的执行又需要cssom, 也就是说如果css定义在js之前，必须加载完成css并构建成cssdom，js才可以执行.
+
+  load 事件: fully-loaded page.
+
+* 并行发起对css,js,git等资源的请求
+  先SendRequest 主html，接着Receive Response, 然后Receive Data, 只是部分，此时就会并行发起对css, git 等资源的请求，不一定要等到解析该html的时候.
+
+* 首屏(第一次painting) 与 DomcontentLoaded没有必然联系.
+  script 标签放在html底部不影响首屏时间，但可能截断首屏页面，比如只显示上半部分.
+
+* ? 不知道什么时候开始first painting
+
 # TODO
 * 初期可以用表格的方式，后期改成图
 * 某时间段内概念、行业涨跌幅排名;

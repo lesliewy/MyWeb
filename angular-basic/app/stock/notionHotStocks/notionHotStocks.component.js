@@ -8,10 +8,10 @@ define(['angular', '../stock.module'], function(angular) {
       controller: ['StockAnalyse',
          function notionHotStocksAnalyseController(StockAnalyse) {
             var self = this;
+
             this.query = function(type) {
                var dtBegin = null;
                var dtEnd = null;
-
                // 打开页面第一次查询.  此时没有this.conditions
                if (this.conditions == undefined || this.conditions == null) {
                   dtBegin = "2017-01-03 15:00:00";
@@ -76,6 +76,14 @@ define(['angular', '../stock.module'], function(angular) {
                       "\"stockName\":" + "\"" + fields[3] + "\"" + "," +
                       "\"totalChange\":" + fields[4] + "," +
                       "\"notionName\":" + "\"" + fields[5] + "\"" + "}";
+
+                      // 是否剔除新股
+                     if(self.filtered){
+                        if(fields[5].indexOf("首发新股") >= 0 || fields[5].indexOf("新股与次新股") >= 0){
+                           continue;
+                        }
+                     }
+
                      // JSON.parse() 转为JSON对象.  反之用JSON.stringify(allJson)
                      allJson.push(JSON.parse(jsonRecord));
                   }
