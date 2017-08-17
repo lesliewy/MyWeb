@@ -14,13 +14,14 @@
                   <i class="icon-calendar"></i>
                </span>
                <input type="submit" value="查询" />
+               <label>&nbsp;&nbsp;&nbsp;所属板块:</label><input id="industrygroup" type="text" ng-model="$ctrl.conditions.industrygroup"/>
             </div>
          </form>
          <table class="table table-striped table-bordered table-hover table-condensed">
             <tr>
                <th ng-repeat="(x,y) in $ctrl.industryHeadNames">{{ y }}</th>
             </tr>
-            <tr ng-repeat="x in $ctrl.industryHotStocksItems">
+            <tr ng-repeat="x in $ctrl.industryHotStocksItems | filter: $ctrl.conditions.industrygroup">
                <td ng-bind="x.num"></td>
                <td ng-bind="x.stockCode"></td>
                <td ng-bind="x.stockName"></td>

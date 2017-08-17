@@ -16,6 +16,7 @@
                </span>
                <input type="submit" value="查询" />
                <label><input type="checkbox" ng-model="$ctrl.filtered">剔除首发新股、新股与次新股</label>
+               <label>&nbsp;&nbsp;&nbsp;所属板块:</label><input id="notiongroup" type="text" ng-model="$ctrl.conditions.notiongroup"/>
             </div>
             <!-- <div class="input-append date input-group input-daterange" id="date">
             </div> -->
@@ -24,7 +25,7 @@
             <tr>
                <th ng-repeat="(x,y) in $ctrl.notionHeadNames">{{ y }}</th>
             </tr>
-            <tr ng-repeat="x in $ctrl.notionHotStocksItems">
+            <tr ng-repeat="x in $ctrl.notionHotStocksItems | filter: $ctrl.conditions.notiongroup">
                <td ng-bind="x.num"></td>
                <td ng-bind="x.stockCode"></td>
                <td ng-bind="x.stockName"></td>
