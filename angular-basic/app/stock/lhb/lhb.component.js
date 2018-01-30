@@ -3,58 +3,41 @@ define(['angular', '../stock.module'], function(angular) {
    angular.
    module('stock').
       // component名字必须和ngroute中指定的关联. stock-compon
-   component('industryHotStocksCompon', {
-      templateUrl: 'stock/industryHotStocks/industryHotStocks.template.html',
+   component('lhbCompon', {
+      templateUrl: 'stock/lhb/lhb.template.html',
       controller: ['StockAnalyse',
          function lhbAnalyseController(StockAnalyse) {
             var self = this;
-            this.query = function(type) {
+
+            this.query = function() {
                var dtBegin = null;
                var dtEnd = null;
-
                // 打开页面第一次查询.  此时没有this.conditions
                if (this.conditions == undefined || this.conditions == null) {
                   dtBegin = "2018-01-03 15:00:00";
                   dtEnd = "2018-01-15 15:00:00";
                } else {
-                  dtBegin = this.conditions
-                  if (type == "notionHotStocks") {
-                     dtBegin = this.conditions.notionHotStocksBegin;
-                     dtEnd = this.conditions.notionHotStocksEnd;
-                  } else if (type == "industryHotStocks") {
-                     dtBegin = this.conditions.industryHotStocksBegin;
-                     dtEnd = this.conditions.industryHotStocksEnd;
-                  } else {
-                     console.log(type + " error, must be notionHotStocks or industryHotStocks");
-                     return;
-                  }
+                  dtBegin = this.conditions.lhbBegin;
+                  dtEnd = this.conditions.lhbEnd;
                }
-               var promise = StockAnalyse.call(dtBegin, dtEnd, type);
+               var promise = StockAnalyse.call(dtBegin, dtEnd, "", '/stanalyse/lhb/query');
                promise.success(function(data, status, headers, config) {
-                  console.log("status: " + status + "   url: " + config.url + " type: " + type);
+                  console.log("status: " + status + "   url: " + config.url);
                   var all = null;
-                  var name = "notionName";
+                  var name = "lhb";
 
                   /** begin: 分页用 */
                   var dataName = null;
                   var pageName = null;
                   var pageListName = null;
                   /** end */
-                  if (type == "notionHotStocks") {
-                     name = "notionName";
-                     all = data.notionHotStocks;
-                     self.notionHeadNames = { "num": "序号", "stockCode": "股票代码", "stockName": "股票名称", "totalChange": "总涨跌幅", "notionName": "概念名称"};
-                     dataName = "notionHotStocksItems";
-                     pageName = "notionHotStocksPage";
-                     pageListName = "notionHotStocksPageList";
-                  } else if (type == "industryHotStocks") {
-                     name = "industryName";
-                     all = data.industryHotStocks;
-                     self.industryHeadNames = { "num": "序号", "stockCode": "股票代码", "stockName": "股票名称", "totalChange": "总涨跌幅", "industryName": "行业名称"};
-                     dataName = "industryHotStocksItems";
-                     pageName = "industryHotStocksPage";
-                     pageListName = "industryHotStocksPageList";
-                  }
+
+                  all = data.lhb;
+                  self.lhbHeadNames = { "date": "日期", "numOfBus": "机构家数", "numOfTopYz": "一游家数", "volumnOfBuyInBus": "机买额", "volumnOfBuyInTopYz": "一游买额", "volumnOfSellOutBus":"机卖额", "volumnOfSellOutTopYz":"一游卖额", "netVolumnOfBus":"机净", "netVolumnOfTopYz":"一游净", "numOfOnlyBuyInBus":"买机数", "numOfOnlySellOutBus":"卖机数", "numOfOnlyBuyInTopYz":"买一游数", "numOfOnlySellOutTopYz":"卖一游数"};
+                  dataName = "lhbItems";
+                  pageName = "lhbPage";
+                  pageListName = "lhbPageList";
+                  
                   var records = all.split('\n');
                   /**
                      构造分页需要的数据.
@@ -71,12 +54,22 @@ define(['angular', '../stock.module'], function(angular) {
 
                      var fields = record.split(',');
                      // num notionName等必须加"",  而且{}内部必须使用"", 外面可以用'', 否则parse报错.
-                     var jsonRecord = "{" + 
-                      "\"num\":" + fields[1] + "," + 
-                      "\"stockCode\":" + "\"" + fields[2] + "\"" + "," +
-                      "\"stockName\":" + "\"" + fields[3] + "\"" + "," +
-                      "\"totalChange\":" + fields[4] + "," +
-                      "\"industryName\":" + "\"" + fields[5] + "\"" + "}";
+                     var jsonRecord = "{" +
+                      "\"date\":" + "\"" + fields[0] + "\"" + "," + 
+                      "\"numOfBus\":" + "\"" + fields[1] + "\"" + "," +
+                      "\"numOfTopYz\":" + "\"" + fields[2] + "\"" + "," +
+                      "\"volumnOfBuyInBus\":" + fields[3] + "," +
+                      "\"volumnOfBuyInTopYz\":" + "\"" + fields[4] + "\"" + "," +
+                      "\"volumnOfSellOutBus\":" + "\"" + fields[5] + "\"" + "," +
+                      "\"volumnOfSellOutTopYz\":" + "\"" + fields[6] + "\"" + "," +
+                      "\"netVolumnOfBus\":" + "\"" + fields[7] + "\"" + "," +
+                      "\"netVolumnOfTopYz\":" + "\"" + fields[8] + "\"" + "," +
+                      "\"numOfOnlyBuyInBus\":" + "\"" + fields[9] + "\"" + "," +
+                      "\"numOfOnlySellOutBus\":" + "\"" + fields[10] + "\"" + "," +
+                      "\"numOfOnlyBuyInTopYz\":" + "\"" + fields[11] + "\"" + "," +
+                      "\"numOfOnlySellOutTopYz\":" + "\"" + fields[12] + "\"" +
+
+                      "}";
                      // JSON.parse() 转为JSON对象.  反之用JSON.stringify(allJson)
                      allJson.push(JSON.parse(jsonRecord));
                   }
@@ -95,9 +88,8 @@ define(['angular', '../stock.module'], function(angular) {
                   console.log("status: " + status + "   url: " + config.url);
                });
             };
-
-            // 打开页面时查询
-            this.query("industryHotStocks");
+            // 初始时执行一次查询
+            this.query();
          }
       ]
    });

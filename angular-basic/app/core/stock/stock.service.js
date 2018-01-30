@@ -11,10 +11,14 @@ define(['angular', './core.stock.module', '../../utils/globalPara'], function(an
             });
          };
 
-         var runJsonp = function(from, to, type) {
+         var runJsonp = function(from, to, type, queryUrl) {
             var result = "leslie";
             var url = GLOBAL.tomcatAddr;  // 前面必须加http， 否则报404.
-            var allUrl = url + '/stanalyse/analyse/' + type + '?callback=JSON_CALLBACK&from=' + from + '&to=' + to;
+            var defaultUrl = "/stanalyse/analyse/";
+            if(queryUrl != null && queryUrl != undefined){
+               defaultUrl = queryUrl;
+            }
+            var allUrl = url + defaultUrl + type + '?callback=JSON_CALLBACK&from=' + from + '&to=' + to;
             console.log("allUrl: " + allUrl);
             var encodeUrl = encodeURI(allUrl);
             return $http.jsonp(encodeUrl);
@@ -22,8 +26,8 @@ define(['angular', './core.stock.module', '../../utils/globalPara'], function(an
          };
          // 返回带有一个events函数的服务对象, 通过将方法设置为服务对象的一个属性来将其暴露给外部.
          return {
-            call: function(from, to, type) {
-               return runJsonp(from, to, type);
+            call: function(from, to, type, queryUrl) {
+               return runJsonp(from, to, type, queryUrl);
             }
          };
       });

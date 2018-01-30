@@ -28,6 +28,7 @@ define([
    '../stock/industryHot/industryHot.component',
    '../stock/notionHotStocks/notionHotStocks.component',
    '../stock/industryHotStocks/industryHotStocks.component',
+   '../stock/lhb/lhb.component',
    '../stock/calLimit/calLimit.component',
    '../stoneStory/stoneStory.module',
    '../stoneStory/stoneStory.component',

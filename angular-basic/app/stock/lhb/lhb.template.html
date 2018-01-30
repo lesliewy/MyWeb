@@ -1,0 +1,64 @@
+<div>
+   <h3 id="lhb">龙虎榜查询</h3>
+   <section>
+      <div id="divMain">
+         <form name="lhbForm" ng-submit="$ctrl.query('lhb')">
+            <div class="input-group">
+               <input id="lhbBegin" name="lhbBegin" class="span3" size="16" type="text" value="2017-01-03 15:00:00" mydatepicker ng-model="$ctrl.conditions.lhbBegin" />
+               <span class="add-on">
+                  <i class="icon-calendar"></i>
+               </span>
+               <span>到</span>
+               <input name="lhbEnd" id="lhbEnd" size="16" type="text" value="2017-01-15 15:00:00" mydatepicker ng-model="$ctrl.conditions.lhbEnd" />
+               <span class="add-on">
+                  <i class="icon-calendar"></i>
+               </span>
+               <input type="submit" value="查询" />
+            </div>
+         </form>
+         <table class="table table-striped table-bordered table-hover table-condensed">
+            <tr>
+               <th ng-repeat="(x,y) in $ctrl.lhbHeadNames">{{ y }}</th>
+            </tr>
+            <tr ng-repeat="x in $ctrl.lhbItems">
+               <td ng-bind="x.date"></td>
+               <td ng-bind="x.numOfBus"></td>
+               <td ng-bind="x.numOfTopYz"></td>
+               <td ng-bind="x.volumnOfBuyInBus"></td>
+               <td ng-bind="x.volumnOfBuyInTopYz"></td>
+               <td ng-bind="x.volumnOfSellOutBus"></td>
+               <td ng-bind="x.volumnOfSellOutTopYz"></td>
+               <td ng-bind="x.netVolumnOfBus"></td>
+               <td ng-bind="x.netVolumnOfTopYz"></td>
+               <td ng-bind="x.numOfOnlyBuyInBus"></td>
+               <td ng-bind="x.numOfOnlySellOutBus"></td>
+               <td ng-bind="x.numOfOnlyBuyInTopYz"></td>
+               <td ng-bind="x.numOfOnlySellOutTopYz"></td>
+            </tr>
+         </table>
+         <div class="input-group">
+            <label>注:</label>
+            <p>机构家数、一游家数、机买额、一游买额、机卖额、一游卖额： 包含买入前5和卖出前5</p>
+            <p>买机数、买一游数： 只包含买前5</p>
+            <p>卖机数、卖一游数： 只包含卖前5</p>
+         </div>
+         <nav>
+            <ul class="pagination">
+               <li>
+                  <a ng-click="$ctrl.Previous()">
+                     <span>上一页</span>
+                  </a>
+               </li>
+               <li ng-repeat="lhbPage in $ctrl.lhbPageList" ng-class="{active: $ctrl.isActivePage(lhbPage)}">
+                  <a ng-click="$ctrl.selectPage(lhbPage)">{{ lhbPage }}</a>
+               </li>
+               <li>
+                  <a ng-click="$ctrl.Next()">
+                     <span>下一页</span>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </section>
+</div>
