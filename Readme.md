@@ -136,6 +136,10 @@ http://123.57.50.82:8080/stanalyse/analyse/industryHotStocks?from=2016-01-01&to=
 
 http://123.57.50.82:3838/
 
+# webpack
+* 入门参考: http://www.cnblogs.com/xuehaoyue/p/6410095.html
+  http://www.cnblogs.com/vajoy/p/4650467.html
+
 
 # TODO
 * 初期可以用表格的方式，后期改成图
