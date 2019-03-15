@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var decompilejar = require('./server/decompilejar/decompilejar')
 
 var app = express();
 
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/decompilejar', decompilejar);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -38,7 +40,8 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-// 跨域设置
+// 跨域设置, webpack中配置proxy(vue 中配置proxyTable)可以实现axios跨域，服务端不需要设置.
+/*
 app.all('*', function (req, res, next) {
   res.header("Access-Control-Allow-Credentials", true)
   res.header("Access-Control-Allow-Origin", "*")
@@ -47,4 +50,5 @@ app.all('*', function (req, res, next) {
   res.header("Content-Type", "application/json;charset=utf-8")
   next()
 })
+*/
 module.exports = app;
