@@ -4,6 +4,7 @@ var url = require('url');
 var fileutil = require('parbat/lib/file/fileutil');
 var callfile = require('child_process');
 var spawn = require('child_process').spawn;
+var resultvalue = require('../core/result')
 
 const querystring = require('querystring');
 
@@ -16,23 +17,24 @@ router.get('/', function (req, res, next) {
   var source = queryString.source;
   var dest = queryString.dest;
   if (!source || !dest || !fileutil.isAllExist([source, dest])) {
-    res.write("有目录不存在.")
+    res.write(resultvalue.seterror(false, "有目录不存在."))
     res.end();
     return;
   }
   if (!fileutil.isBlankDir(dest)) {
-    res.write("输出目录必须是空目录.");
+    res.write(resultvalue.seterror(false, "输出目录必须是空目录."))
     res.end();
     return;
   }
-  console.log("目录校验正确.")
 
   callfile.execFile('bin/jad/jad_src.sh', [source, dest], { env: { jad_command: process.cwd() + "/bin/jad/jad_mac" } }, function (err, stdout, stderr) {
     console.log("err: " + err);
     console.log("stdout: " + stdout);
     console.log("stderr: " + stderr);
+    res.write(resultvalue.setsuccess());
+    res.end();
   });
-  res.end();
+  console.log("leslie1");
 });
 
 module.exports = router;

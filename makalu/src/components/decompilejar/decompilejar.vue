@@ -10,6 +10,7 @@
     </div>
     <div>
       <label v-if="success">反编译完成</label>
+      <label v-if="!success">{{message}}</label>
     </div>
   </div>
 </template>
@@ -20,7 +21,8 @@ export default {
     return {
       source: '',
       dest: '',
-      success: false
+      success: false,
+      message: ''
     }
   },
   methods: {
@@ -32,11 +34,11 @@ export default {
         }
       })
       .then(response =>{
-        console.log(response.data);
-        this.success = true;
+        this.success = response.data.success;
+        this.message = response.data.message;
       })
       .catch(error =>{
-        console.log('error');
+        console.log('error: ' + error);
       })
     }
   }
